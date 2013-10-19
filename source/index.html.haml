@@ -1,8 +1,127 @@
 ---
-title: Welcome to Middleman
+title: ruedap.com
 ---
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/'
+%header.banner
+  = banner = capture_haml do
+    %h1.banner__logo
+      = content_tag(:object, data: image_path('logo_ruedapcom.svg'), width: 156, height: 200) do
+        = image_tag('logo_ruedapcom.png', width: '156', height: '200', alt: 'ルエダップコム', title: 'ルエダップコム')
+    .banner__avatar
+      = image_tag('logo_ruedap.png', width: '100', height: '100', alt: 'ruedap', title: 'ruedap', class: 'banner__avatar-img')
+    %ul.profile
+      %li<>= link_to('twitter', 'https://twitter.com/ruedap', target: '_blank', class: 'profile__icon')
+      %li<>= link_to('github', 'https://github.com/ruedap', target: '_blank', class: 'profile__icon')
+      %li<>= link_to('mail', 'mailto:ruedap@ruedap.com', class: 'profile__icon')
+      %li<>= link_to('wishlist', 'http://www.amazon.co.jp/wishlist/1NPRE7894OBKR/?sort=priority', target: '_blank', class: 'profile__icon')
+
+%section.blog
+  %h1.blog__heading
+    = content_tag(:object, data: image_path('section_blog.svg')) do
+      ブログ
+  %article
+    = link_to('http://blog.ruedap.com') do
+      = image_tag('logo_einstein.svg', class: 'blog__logo-img')
+
+%section.products
+  %h1.products__heading
+    = content_tag(:object, data: image_path('section_products.svg')) do
+      プロダクツ
+
+  %article.product
+    %h1.product__heading Font Awesome Workflow for Alfred 2
+    .product__thumbnail
+      = link_to('https://github.com/ruedap/alfred2-font-awesome-workflow', target: '_blank') do
+        = image_tag('products/alfred2-font-awesome-workflow.png', width: '100%', title: 'Font Awesome Workflow for Alfred 2', alt: 'Font Awesome Workflow for Alfred 2')
+    .product__body
+      %time.product__time(pubdate='2013-08-07') 2013.8.7
+      %h2.product__title= link_to('Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた', 'http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow')
+      %p.product__description
+        = link_to('ブログの再開', 'http://blog.ruedap.com/2013/07/26/reboooot')
+        が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、
+        = link_to('Font Awesome', 'http://fontawesome.io/')
+        を使ってる人で
+        = link_to('Alfred', 'http://www.alfredapp.com/')
+        を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
+        %br
+        あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる 
+        = link_to('Alfred 2用のプラグイン', 'https://github.com/ruedap/alfred2-font-awesome-workflow')
+        を作ってみた。
+        %br
+        百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow')
+
+  %article.product
+    %h1.product__heading ウタダヒカループ
+    .product__thumbnail
+      = link_to('http://uhloop.com', target: '_blank') do
+        = image_tag('products/uhloop.png', width: '100%', title: 'ウタダヒカループ', alt: 'ウタダヒカループ')
+    .product__body
+      %time.product__time(pubdate='2011-8-11') 2011.8.11
+      %h2.product__title= link_to('宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた', 'http://blog.ruedap.com/entry/20110811/uhloop')
+      %p.product__description
+        = link_to('冷蔵庫で設計したWebアプリ', 'http://blog.ruedap.com/entry/20110807/reizouko_driven_development')
+        、宇多田ヒカル大好き専用PVビューアー「ウタダヒカループ」を8月8日にリリースしました。今回のWebアプリの制作理由をざっくりまとめると以下の2点です。
+      %ul.product__description
+        %li ブラウザに uhloop.com とだけ打ち込めば、すぐに、ずっと、宇多田ヒカルを聴いていられる・観ていられるサービスが欲しかった。
+        %li 活動休止ライブのDVD「WILD LIFE」で、宇多田さんがとても楽しそうに「ぼんじゅーる!!」を観客と言い合っているシーンを観ていたら、自分もぼんじゅーるしたくなった。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110811/uhloop')
+
+  %article.product
+    %h1.product__heading SASSIENCE ～ 世界が嫉妬するCSSへ
+    .product__thumbnail
+      = link_to('http://sassience.com', target: '_blank') do
+        = image_tag('products/sassience.png', width: '100%', title: 'SASSIENCE ～ 世界が嫉妬するCSSへ', alt: 'SASSIENCE ～ 世界が嫉妬するCSSへ')
+    .product__body
+      %time.product__time(pubdate='2011-5-26') 2011.5.26
+      %h2.product__title= link_to('CSSのインデントを綺麗にするサービス「SASSIENCE」を作ってみた', 'http://blog.ruedap.com/entry/20110526/css_indent_nest_beauty_service_sassience')
+      %p.product__description
+        SASSIENCEは、簡単に言えばCSSのインデントやネストを綺麗に整形するサービスです。簡単に言わなくても、それだけの機能しかありません。
+        %br
+        トップページの画面中央の入力フォームに、綺麗にしたいCSSのデータをペーストして、好みの2タイプ（括弧の綴じ方の違い）を選ぶと、インデントとネストが綺麗に整形されます。また、入力データがCSSの記法として正しくない場合は変換に失敗し、その原因予想を提示するので、簡易的なバリデータとしても利用できます。ただし、変換失敗時の原因予想はあくまでも予想なので、的外れなこともあります。この変換技術には、CSSを簡潔に記述できる「Sass」というRubyのライブラリを利用しています。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110526/css_indent_nest_beauty_service_sassience')
+
+  %article.product
+    %h1.product__heading はてなスターカウンター
+    .product__thumbnail
+      = link_to('http://hatenastar.heroku.com/', target: '_blank') do
+        = image_tag('products/hatenastar.png', width: '100%', title: 'はてなスターカウンター', alt: 'はてなスターカウンター')
+    .product__body
+      %time.product__time(pubdate='2011-4-21') 2011.4.21
+      %h2.product__title= link_to('はてなスターの総数を表示できる「はてなスターカウンター」を作ってみた', 'http://blog.ruedap.com/entry/20110421/hatenastar_counter')
+      %p.product__description
+        はてなスターって、とても良いサービスだと思うんだけど、いまいちパッとしないというか、地味というか、微妙に使いづらいというか、まぁそういうところも含めて好きなんだけど。
+        %br
+        はてなブックマークと役割が若干かぶってて、最近TwitterのTweetボタンやFacebookのいいね！などに押され気味で、なおかつ、もうすぐGoogle先生が+1ボタンというのを出してくるので、今後さらに目立たなくなってしまいそうなはてなスター。それでも自分の書いたブログ記事にスターを付けてもらえると嬉しいし、使う側から見ても前述の他のサービスに比べるとはてなスターは最も気軽に使えるサービスだと思う。昨今流行りの魔法の言葉じゃないけど、気軽にスターを付けて「読んだよ！」「だよね！」「ありがとう！」などのいろいろな意味やシチュエーションで今後も使っていきたい。そんなはてなスターという素敵なサービスに、この「はてなスターカウンター」がちょっとでもお力添えできればこれ幸い。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110421/hatenastar_counter')
+
+  %article.product
+    %h1.product__heading Inustagram - いぬ大好き専用Instagram
+    .product__thumbnail
+      = link_to('http://inustagram.com', target: '_blank') do
+        = image_tag('products/inustagram.png', width: '100%', alt: 'Inustagram - いぬ大好き専用Instagram', title: 'Inustagram - いぬ大好き専用Instagram')
+    .product__body
+      %time.product__time(pubdate='2011-3-5') 2011.3.5
+      %h2.product__title= link_to('二匹目のどじょうを狙っていぬ大好き専用の「Inustagram」を作ってみた', 'http://blog.ruedap.com/entry/20110305/instagram_api_of_exclusive_use_for_dog_lovers_inustagram')
+      %p.product__description
+        前作ネコスタグラムの公開から約1週間。ビバ土日。2匹目のドジョウを狙って、ネコスタグラム公開後にいただいた反響の中で多かった「犬バージョンはまだ？」というリクエストにおこたえして、いぬ大好き専用Instagramビューアー、イヌスタグラム。
+        %br
+        本家Instagramと一瞬見分けのつかないちょっとグレーなWebアプリ名な上に、前作の検索対象を「cat」から「dog」に変えただけのかんたん複製アプリでございます。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110305/instagram_api_of_exclusive_use_for_dog_lovers_inustagram')
+
+  %article.product
+    %h1.product__heading Nekostagram - ねこ大好き専用Instagram
+    .product__thumbnail
+      = link_to('http://nekostagram.com', target: '_blank') do
+        = image_tag('products/nekostagram.png', width: '100%', alt: 'Nekostagram - ねこ大好き専用Instagram', title: 'Nekostagram - ねこ大好き専用Instagram')
+    .product__body
+      %time.product__time(pubdate='2011-2-28') 2011.2.28
+      %h2.product__title= link_to('Instagram APIを使ってねこ大好き専用の「Nekostagram」を作ってみた', 'http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram')
+      %p.product__description
+        （ドヤッ）ってな感じのWebアプリ名を付けちゃったけど、そんな大層なものではなく、ページを読み込むたびにInstagramのAPIでネコ写真をちょっとずつ取ってきて、そのネコ写真と撮影者のコメントを一覧表示してるだけのペライチなサイトでございます。
+        %br
+        マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。
+    %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram')
+
+%footer.banner
+  = banner

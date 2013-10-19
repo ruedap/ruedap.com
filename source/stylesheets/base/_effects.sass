@@ -1,0 +1,30 @@
+@import compass/css3/animation
+@import compass/css3/transform
+@import compass/css3/transition
+
+// +animation(ruedap-avatar 1.5s ease 2s)
++keyframes(ruedap-avatar)
+  0%
+    +transform-origin(center, center)
+    +transform(rotate(0deg))
+  100%
+    +transform-origin(center, center)
+    +transform(rotate(2turn))
+
+
+// +animation(sparkle-x 0.4s ease 3.5s)
++keyframes(sparkle-x)
+  0%
+    +transform-origin(center, center)
+    +transform(rotateX(0deg))
+  100%
+    +transform-origin(center, center)
+    +transform(rotateX(1turn))
+
+
+// profile
+=transition--profile__icon
+  +transition(all 0.4s ease)
+  &:hover
+    color: $color--profile__icon--hover
+    +transform(rotate(1turn) scale(1.2))
