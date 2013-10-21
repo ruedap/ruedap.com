@@ -1,0 +1,91 @@
+.root
+  text-align: center
+  font-family: $font-family--mincho
+  background: $background-color--root image-url("bg_pattern.png") repeat
+  color: $color--root
+  font-size: $font-size--medium
+  @at-root #{&}__inner
+    padding: $padding-top--root__inner $padding--medium 1px
+    background: inline-image("bg_twolines.png") center top repeat-y
+    +media-tablet
+      padding: $padding-top--root__inner--tablet $padding--medium 1px
+
+.banner
+  @at-root #{&}__logo
+    margin-bottom: $margin-bottom--banner__logo
+    +media-tablet
+      margin-bottom: $margin-bottom--banner__logo--tablet
+  @at-root #{&}__avatar
+    margin: 0 auto
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    background-color: $background-color--banner-avator
+    +animation(ruedap-avatar 1.5s ease 2s)
+  @at-root #{&}__avatar-img
+    margin: 10px
+    border-radius: 50%
+    opacity: $opacity--logo-img
+
+.profile
+  @extend %no-bullets
+  margin: $margin--large auto $margin-bottom--profile
+  width: $width--profile
+  +media-tablet
+    margin: $margin--large auto $margin-bottom--profile--tablet
+
+  @at-root #{&}__icon
+    @extend %dapicons
+    display: block
+    padding: $padding-vertical--profile__icon $padding--medium
+    font-size: $font-size--profile__icon
+    color: $color--profile__icon
+    +animation(sparkle-x 0.4s ease 3.5s)
+    +transition--profile__icon
+    +media-tablet
+      padding: $padding-vertical--profile__icon--tablet $padding--medium
+
+.blog
+  +style-section
+  @at-root #{&}__logo-img
+    max-width: 500px
+    opacity: $opacity--logo-img
+    &:hover
+      opacity: $opacity--logo-img--hover
+
+.products
+  +style-section
+
+.product
+  margin-bottom: $margin-bottom--product
+  padding: $padding--product
+  background-color: $background-color--product
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #eeeeee inset
+  +media-tablet
+    margin-bottom: $margin-bottom--product--tablet
+    padding: $padding--product--tablet
+
+  @at-root #{&}__heading
+    display: none
+  @at-root #{&}__thumbnail
+    @extend %product__thumbnail
+    @extend %product__thumbnail-shadow
+    margin-bottom: $margin-bottom--product__thumbnail
+  @at-root #{&}__body
+    margin-bottom: $margin--xxxlarge
+  @at-root #{&}__time
+    display: block
+    margin-bottom: $margin--large
+    font-family: $font-family--georgia
+    font-size: $font-size--large
+  @at-root #{&}__title
+    margin-bottom: $margin--large
+    font-size: $font-size--product__title
+  @at-root #{&}__description
+    @extend %border-bottom-decoration
+    font-size: $font-size--medium
+    line-height: $line-height--product__description
+    text-align: left
+  @at-root #{&}__more
+    @extend %border-bottom-decoration
+    margin-bottom: $margin--large
