@@ -11,21 +11,22 @@
       padding: $padding-top--root__inner--tablet $padding--medium 1px
 
 .banner
-  @at-root #{&}__logo
-    margin-bottom: $margin-bottom--banner__logo
-    +media-tablet
-      margin-bottom: $margin-bottom--banner__logo--tablet
-  @at-root #{&}__avatar
-    margin: 0 auto
-    width: 120px
-    height: 120px
-    border-radius: 50%
-    background-color: $background-color--banner-avator
-    +animation(ruedap-avatar 1.5s ease 2s)
-  @at-root #{&}__avatar-img
-    margin: 10px
-    border-radius: 50%
-    opacity: $opacity--logo-img
+  @at-root
+    #{&}__logo
+      margin-bottom: $margin-bottom--banner__logo
+      +media-tablet
+        margin-bottom: $margin-bottom--banner__logo--tablet
+    #{&}__avatar
+      margin: 0 auto
+      width: 120px
+      height: 120px
+      border-radius: 50%
+      background-color: $background-color--banner-avator
+      +animation(ruedap-avatar 1.5s ease 2s)
+    #{&}__avatar-img
+      margin: 10px
+      border-radius: 50%
+      opacity: $opacity--logo-img
 
 .profile
   @extend %no-bullets
@@ -33,7 +34,6 @@
   width: $width--profile
   +media-tablet
     margin: $margin--large auto $margin-bottom--profile--tablet
-
   @at-root #{&}__icon
     @extend %dapicons
     display: block
@@ -64,28 +64,28 @@
   +media-tablet
     margin-bottom: $margin-bottom--product--tablet
     padding: $padding--product--tablet
-
-  @at-root #{&}__heading
-    display: none
-  @at-root #{&}__thumbnail
-    @extend %product__thumbnail
-    @extend %product__thumbnail-shadow
-    margin-bottom: $margin-bottom--product__thumbnail
-  @at-root #{&}__body
-    margin-bottom: $margin--xxxlarge
-  @at-root #{&}__time
-    display: block
-    margin-bottom: $margin--large
-    font-family: $font-family--georgia
-    font-size: $font-size--large
-  @at-root #{&}__title
-    margin-bottom: $margin--large
-    font-size: $font-size--product__title
-  @at-root #{&}__description
-    @extend %border-bottom-decoration
-    font-size: $font-size--medium
-    line-height: $line-height--product__description
-    text-align: left
-  @at-root #{&}__more
-    @extend %border-bottom-decoration
-    margin-bottom: $margin--large
+  @at-root
+    #{&}__heading
+      display: none
+    #{&}__thumbnail
+      @extend %product__thumbnail
+      @extend %product__thumbnail-shadow
+      margin-bottom: $margin-bottom--product__thumbnail
+    #{&}__body
+      margin-bottom: $margin--xxxlarge
+    #{&}__time
+      display: block
+      margin-bottom: $margin--large
+      font-family: $font-family--georgia
+      font-size: $font-size--large
+    #{&}__title
+      margin-bottom: $margin--large
+      font-size: $font-size--product__title
+    #{&}__description
+      @extend %border-bottom-decoration
+      font-size: $font-size--medium
+      line-height: $line-height--product__description
+      text-align: left
+    #{&}__more
+      @extend %border-bottom-decoration
+      margin-bottom: $margin--large
