@@ -21,7 +21,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
@@ -103,7 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (= 0.13.alpha.7)
-  haml (= 4.0.3)
+  haml (= 4.0.4)
   listen (~> 1.1.6)
   middleman (= 3.2.0)
   middleman-deploy (= 0.1.3)
