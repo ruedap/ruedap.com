@@ -8,4 +8,4 @@ gem 'haml', '4.0.4'
 gem 'sass', '3.3.0.rc.1'
 gem 'listen', '~> 1.1.6' # sass dependency
 gem 'compass', '0.13.alpha.7'
-gem 'middleman-deploy', '0.1.3'
+gem 'middleman-deploy', '0.1.4'
