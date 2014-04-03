@@ -6,29 +6,28 @@
   background-repeat: repeat
   color: $color--root
   font-size: $font-size--medium
-  @at-root #{&}__inner
+  &__inner
     padding: $padding-top--root__inner $padding--medium 1px
     background: inline-image("bg_twolines.png") center top repeat-y
     +media-tablet
       padding: $padding-top--root__inner--tablet $padding--medium 1px
 
 .banner
-  @at-root
-    #{&}__logo
-      margin-bottom: $margin-bottom--banner__logo
-      +media-tablet
-        margin-bottom: $margin-bottom--banner__logo--tablet
-    #{&}__avatar
-      margin: 0 auto
-      width: 120px
-      height: 120px
-      border-radius: 50%
-      background-color: $background-color--banner-avator
-      +animation(ruedap-avatar 1.5s ease 2s)
-    #{&}__avatar-img
-      margin: 10px
-      border-radius: 50%
-      opacity: $opacity--logo-img
+  &__logo
+    margin-bottom: $margin-bottom--banner__logo
+    +media-tablet
+      margin-bottom: $margin-bottom--banner__logo--tablet
+  &__avatar
+    margin: 0 auto
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    background-color: $background-color--banner-avator
+    +animation(ruedap-avatar 1.5s ease 2s)
+  &__avatar-img
+    margin: 10px
+    border-radius: 50%
+    opacity: $opacity--logo-img
 
 .profile
   @extend %no-bullets
@@ -36,7 +35,7 @@
   width: $width--profile
   +media-tablet
     margin: $margin--large auto $margin-bottom--profile--tablet
-  @at-root #{&}__icon
+  &__icon
     @extend %dapicons
     display: block
     padding: $padding-vertical--profile__icon $padding--medium
@@ -49,7 +48,7 @@
 
 .blog
   +style-section
-  @at-root #{&}__logo-img
+  &__logo-img
     max-width: 500px
     opacity: $opacity--logo-img
     &:hover
@@ -68,28 +67,27 @@
     margin-bottom: $margin-bottom--product--tablet
     padding: $padding--product--tablet
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px $_color inset
-  @at-root
-    #{&}__heading
-      display: none
-    #{&}__thumbnail
-      @extend %product__thumbnail
-      @extend %product__thumbnail-shadow
-      margin-bottom: $margin-bottom--product__thumbnail
-    #{&}__body
-      margin-bottom: $margin--xxxlarge
-    #{&}__time
-      display: block
-      margin-bottom: $margin--large
-      font-family: $font-family--georgia
-      font-size: $font-size--large
-    #{&}__title
-      margin-bottom: $margin--large
-      font-size: $font-size--product__title
-    #{&}__description
-      @extend %border-bottom-decoration
-      font-size: $font-size--medium
-      line-height: $line-height--product__description
-      text-align: left
-    #{&}__more
-      @extend %border-bottom-decoration
-      margin-bottom: $margin--large
+  &__heading
+    display: none
+  &__thumbnail
+    @extend %product__thumbnail
+    @extend %product__thumbnail-shadow
+    margin-bottom: $margin-bottom--product__thumbnail
+  &__body
+    margin-bottom: $margin--xxxlarge
+  &__time
+    display: block
+    margin-bottom: $margin--large
+    font-family: $font-family--georgia
+    font-size: $font-size--large
+  &__title
+    margin-bottom: $margin--large
+    font-size: $font-size--product__title
+  &__description
+    @extend %border-bottom-decoration
+    font-size: $font-size--medium
+    line-height: $line-height--product__description
+    text-align: left
+  &__more
+    @extend %border-bottom-decoration
+    margin-bottom: $margin--large
