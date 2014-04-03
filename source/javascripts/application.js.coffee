@@ -1,18 +1,8 @@
 #= require_tree .
 #= require_self
 
-d3BannerLogoNode = d3.select('#templateSvgLogo > svg').node()
-
-setLogoAttr = (svg) ->
-  svg
-    .attr
-      width: 156
-      height: 200
-    .each (d, i) ->
-      @appendChild d3BannerLogoNode.cloneNode(true)
-
-header = d3.select('#jsHeaderLogo').append('svg')
-setLogoAttr(header)
-
-footer = d3.select('#jsFooterLogo').append('svg')
-setLogoAttr(footer)
+d3.xml 'images/logo_ruedapcom.svg', 'image/svg+xml', (xml) ->
+  d3HeaderLogoNode = document.importNode(xml.documentElement, true)
+  d3.select('#jsHeaderLogo').node().appendChild(d3HeaderLogoNode)
+  d3FooterLogoNode = document.importNode(xml.documentElement, true)
+  d3.select('#jsFooterLogo').node().appendChild(d3FooterLogoNode)
