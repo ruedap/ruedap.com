@@ -3,10 +3,8 @@ title: ruedap.com
 ---
 
 %header.banner
+  %h1#jsHeaderLogo.banner__logo
   = banner = capture_haml do
-    %h1.banner__logo
-      = content_tag(:object, data: image_path('logo_ruedapcom.svg'), width: 156, height: 200) do
-        = image_tag('logo_ruedapcom.png', width: '156', height: '200', alt: 'ルエダップコム', title: 'ルエダップコム')
     .banner__avatar
       = image_tag('logo_ruedap.png', width: '100', height: '100', alt: 'ruedap', title: 'ruedap', class: 'banner__avatar-img')
     %ul.profile
@@ -65,7 +63,7 @@ title: ruedap.com
         = link_to('Alfred', 'http://www.alfredapp.com/')
         を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
         %br
-        あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる 
+        あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる
         = link_to('Alfred 2用のプラグイン', 'https://github.com/ruedap/alfred2-font-awesome-workflow')
         を作ってみた。
         %br
@@ -145,4 +143,9 @@ title: ruedap.com
     %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram')
 
 %footer.banner
+  %h1#jsFooterLogo.banner__logo
   = banner
+
+
+%div(id="templateSvgLogo" style="display: none;")
+  = partial 'templates/logo.html.erb'
