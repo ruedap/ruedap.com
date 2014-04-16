@@ -142,6 +142,53 @@ title: ruedap.com
         マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。
     %nav.product__more= link_to('続きを読む', 'http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram')
 
-%footer.banner
-  %h1#jsFooterLogo.banner__logo
-  = banner
+%template#x-ruedap-footer-template
+  :sass
+    .banner__logo
+      margin-bottom: 3.5rem
+    .banner__avatar
+      margin: 0 auto
+      width: 120px
+      height: 120px
+      border-radius: 50%
+      background-color: #e4e4e4
+    .banner__avatar-img
+      margin: 10px
+      border-radius: 50%
+      opacity: 0.8
+    .profile
+      margin: 2rem auto 16rem
+      width: 58px
+      padding: 0
+      list-style: none
+      li
+        margin-left: 0
+        list-style-image: none
+        list-style-type: none
+    .profile__icon
+      font-family: 'dapicons'
+      speak: none
+      -webkit-font-feature-settings: "liga","dlig"
+      -moz-font-feature-settings: "liga=1, dlig=1"
+      -moz-font-feature-settings: "liga","dlig"
+      -ms-font-feature-settings: "liga","dlig"
+      -o-font-feature-settings: "liga","dlig"
+      font-feature-settings: "liga","dlig"
+      text-rendering: optimizeLegibility
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      -webkit-font-smoothing: antialiased
+      display: block
+      padding: 1.6rem
+      font-size: 2.6rem
+      color: #b6b6b6
+      text-decoration: none
+
+  %footer.banner
+    %h1#jsFooterLogo.banner__logo
+      = content_tag(:object, data: image_path('logo_ruedapcom.svg'), width: 156, height: 200) do
+        = image_tag('logo_ruedapcom.png', width: '156', height: '200', alt: 'ルエダップコム', title: 'ルエダップコム')
+    = banner
