@@ -28,7 +28,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.0.4)
     execjs (2.0.2)
     ffi (1.9.3)
     haml (4.0.5)
@@ -128,6 +128,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (= 1.0.0.alpha.19)
+  eventmachine (= 1.0.4)
   haml (= 4.0.5)
   middleman (= 3.3.3)
   middleman-deploy (= 0.2.3)

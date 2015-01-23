@@ -8,3 +8,4 @@ gem 'haml', '4.0.5'
 gem 'sass', '3.3.7'
 gem 'compass', '1.0.0.alpha.19'
 gem 'middleman-deploy', '0.2.3'
+gem 'eventmachine', '1.0.4' # for Yosemite
