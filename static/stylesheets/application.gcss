@@ -1,3 +1,7 @@
+
+// Variables
+// ============================================================================
+
 @font-face
   font-family: "dapicons"
   src: url("dapicons.eot")
@@ -24,8 +28,35 @@ $dapicons()
 $width-avatar: 100px
 $bgcolor-avatar: #e4e4e4
 
+// Elements
+// ============================================================================
+
+*, *::before, *::after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+
 body
+  font-size: 1.6rem
   background-color: #ececec
+  -webkit-text-size-adjust: 100%
+
+img
+  vertical-align: text-bottom
+
+a
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  font-weight: normal
+
+// Avatar block
+// ============================================================================
 
 .Avatar
   background-color: $bgcolor-avatar
@@ -40,6 +71,9 @@ body
   width: 100%
   border-radius: 100%
   opacity: 0.8
+
+// LinkList block
+// ============================================================================
 
 .LinkList-link
   $dapicons()
