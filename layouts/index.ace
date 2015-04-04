@@ -7,8 +7,10 @@ html lang=ja
     link href="stylesheets/application.css" media="all" rel="stylesheet"
   body
     header
-      h1.Avatar
-        img.Avatar-image src="images/logo_ruedap.png"
+      h1.Banner
+        img.Banner-image src="images/logo_ruedapcom.svg" alt="ルエダップコム"
+      .Avatar
+        img.Avatar-image src="images/logo_ruedap.png" alt="ruedap"
       ul.LinkList.u-lire
         li
           a.LinkList-link href="https://twitter.com/ruedap" target="_blank" twitter
