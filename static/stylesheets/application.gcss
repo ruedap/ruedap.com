@@ -1,0 +1,20 @@
+
+$width-avatar: 100px
+$bgcolor-avatar: #e4e4e4
+
+body
+  background-color: #ececec
+
+.Avatar
+  background-color: $bgcolor-avatar
+  border-radius: 100%
+  display: block
+  height: $width-avatar
+  margin: 0 auto
+  width: $width-avatar
+  padding: 10px
+
+.Avatar-image
+  width: 100%
+  border-radius: 100%
+  opacity: 0.8

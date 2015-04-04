@@ -6,8 +6,8 @@ html lang=ja
     link href="stylesheets/application.css" media="all" rel="stylesheet"
   body
     header
-      h1
-        img src="images/logo_ruedap.png"
+      h1.Avatar
+        img.Avatar-image src="images/logo_ruedap.png"
       ul
         li
           a href="https://twitter.com/ruedap" target="_blank" twitter
