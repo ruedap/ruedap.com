@@ -75,9 +75,14 @@ h1, h2, h3, h4, h5, h6
 // LinkList block
 // ============================================================================
 
+.LinkList
+  margin: 2rem auto 16rem
+  text-align: center
+  width: 58px
+
 .LinkList-link
   $dapicons()
   display: block
   padding: 1.2rem
   font-size: 2.6rem
-  color: black
+  color: #b6b6b6
