@@ -2,6 +2,8 @@
 html lang=ja
   head
     title {{ .Title }}
+    link href="stylesheets/emma.css" media="all" rel="stylesheet"
+    link href="stylesheets/application.css" media="all" rel="stylesheet"
   body
     header
       h1
