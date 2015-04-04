@@ -25,8 +25,8 @@ $dapicons()
   line-height: 1
   -webkit-font-smoothing: antialiased
 
-$width-avatar: 100px
-$bgcolor-avatar: #e4e4e4
+$width-avatar: 120px
+$bgcolor-border: #e4e4e4
 
 // Elements
 // ============================================================================
@@ -55,10 +55,44 @@ h1, h2, h3, h4, h5, h6
   margin: 0
   padding: 0
 
+// Page block
+// ============================================================================
+
+.Page
+  padding-top: 14rem
+  position: relative
+  width: 100%
+  z-index: 0
+
+  &::before, &::after
+    position: absolute
+    top: 0
+    left: 50%
+    display: block
+    width: 10px
+    height: 100%
+    content: ""
+    transform: translateX(-50%)
+    background-color: $bgcolor-border
+
+  &::before
+    margin-left: -36px
+
+  &::after
+    margin-left: 36px
+
+// Contaienr block
+// ============================================================================
+
+.Container
+  position: relative
+  z-index: 1
+
 // Banner block
 // ============================================================================
 
 .Banner
+  position: relative
   margin-bottom: 7rem
   text-align: center
 
@@ -66,7 +100,7 @@ h1, h2, h3, h4, h5, h6
 // ============================================================================
 
 .Avatar
-  background-color: $bgcolor-avatar
+  background-color: $bgcolor-border
   border-radius: 100%
   display: block
   height: $width-avatar
@@ -83,6 +117,7 @@ h1, h2, h3, h4, h5, h6
 // ============================================================================
 
 .LinkList
+  position: relative
   margin: 2rem auto 16rem
   text-align: center
   width: 58px
