@@ -5,79 +5,80 @@ html lang=ja
     link href="stylesheets/normalize.css" media="all" rel="stylesheet"
     link href="stylesheets/emma.css" media="all" rel="stylesheet"
     link href="stylesheets/application.css" media="all" rel="stylesheet"
-  body
-    header
-      h1.Banner
-        img.Banner-image src="images/logo_ruedapcom.svg" alt="ルエダップコム"
-      .Avatar
-        img.Avatar-image src="images/logo_ruedap.png" alt="ruedap"
-      ul.LinkList.u-lire
-        li
-          a.LinkList-link href="https://twitter.com/ruedap" target="_blank" twitter
-        li
-          a.LinkList-link href="https://github.com/ruedap" target="_blank" github
-        li
-          a.LinkList-link href="mailto:ruedap@ruedap.com" mail
-        li
-          a.LinkList-link href="http://www.amazon.co.jp/wishlist/1NPRE7894OBKR/?sort=priority" target="_blank" wishlist
-    main
-      section
-        h1
-          img src="images/section_blog.svg" alt="ブログ"
-        div
-          a href="http://blog.ruedap.com/"
-            img src="images/logo_einstein.svg"
-
-      section
-        h1
-          img src="images/section_products.svg" alt="プロダクツ"
-
-        article
-          h1 アインシュタインの電話番号
-          a href="https://github.com/ruedap/daplog" target="_blank"
-            img src="images/products/daplog.png"
+  body.Page
+    .Container
+      header
+        h1.Banner
+          img.Banner-image src="images/logo_ruedapcom.svg" alt="ルエダップコム"
+        .Avatar
+          img.Avatar-image src="images/logo_ruedap.png" alt="ruedap"
+        ul.LinkList.u-lire
+          li
+            a.LinkList-link href="https://twitter.com/ruedap" target="_blank" twitter
+          li
+            a.LinkList-link href="https://github.com/ruedap" target="_blank" github
+          li
+            a.LinkList-link href="mailto:ruedap@ruedap.com" mail
+          li
+            a.LinkList-link href="http://www.amazon.co.jp/wishlist/1NPRE7894OBKR/?sort=priority" target="_blank" wishlist
+      main
+        section
+          h1
+            img src="images/section_blog.svg" alt="ブログ"
           div
-            time pubdate="2013-11-11" 2013.11.11
-            h2
-              a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた
-            p  今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。
-            ul
-              li
-                a href="http://tech.nitoyon.com/ja/blog/2012/09/20/moved-completed/" 俺の最強ブログ システムが火を噴くぜ - てっく煮ブログ
-              li
-                a href="http://webtech-walker.com/archive/2012/09/fired-myblog.html" 俺の最強ブログシステムも火を噴いてたぜ - Webtech Walker
-            p
-              span 当時は
-              a href="http://blog.ruedap.com/2013/08/22/imakoko" それどころではなかった
-              span こともあって、なかなか着手できずにいたんだけど、
-              a href="http://blog.ruedap.com/2013/07/26/reboooot" 今年の7月頃
-              span から作り始めて、最近そこそこ希望通りの形になったので、まだやり残しはたくさんあるけれど、一旦ここで一区切りということでその内容を記事にしてみる。
-          nav
-            a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" 続きを読む
+            a href="http://blog.ruedap.com/"
+              img src="images/logo_einstein.svg"
+
+        section
+          h1
+            img src="images/section_products.svg" alt="プロダクツ"
+
+          article
+            h1 アインシュタインの電話番号
+            a href="https://github.com/ruedap/daplog" target="_blank"
+              img src="images/products/daplog.png"
+            div
+              time pubdate="2013-11-11" 2013.11.11
+              h2
+                a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた
+              p  今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。
+              ul
+                li
+                  a href="http://tech.nitoyon.com/ja/blog/2012/09/20/moved-completed/" 俺の最強ブログ システムが火を噴くぜ - てっく煮ブログ
+                li
+                  a href="http://webtech-walker.com/archive/2012/09/fired-myblog.html" 俺の最強ブログシステムも火を噴いてたぜ - Webtech Walker
+              p
+                span 当時は
+                a href="http://blog.ruedap.com/2013/08/22/imakoko" それどころではなかった
+                span こともあって、なかなか着手できずにいたんだけど、
+                a href="http://blog.ruedap.com/2013/07/26/reboooot" 今年の7月頃
+                span から作り始めて、最近そこそこ希望通りの形になったので、まだやり残しはたくさんあるけれど、一旦ここで一区切りということでその内容を記事にしてみる。
+            nav
+              a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" 続きを読む
 
 
-        article
-          h1 Font Awesome Workflow for Alfred 2
-          a href="https://github.com/ruedap/alfred2-font-awesome-workflow" target="_blank"
-            img src="images/products/alfred2-font-awesome-workflow.png"
-          div
-            time pubdate="2013-08-07" 2013.8.7
-            h2
-              a href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた
-            p
-              span 当時は
-              a href="http://blog.ruedap.com/2013/07/26/reboooot" ブログの再開
-              span が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、
-              a href="http://fontawesome.io/" Font Awesome
-              span を使ってる人で
-              a href="http://www.alfredapp.com/" Alfred
-              span を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
-            p
-              span あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる
-              a href="https://github.com/ruedap/alfred2-font-awesome-workflow" Alfred 2用のプラグイン
-              span を作ってみた。
-            p
-              span 百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。
-          nav
-            a href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" 続きを読む
+          article
+            h1 Font Awesome Workflow for Alfred 2
+            a href="https://github.com/ruedap/alfred2-font-awesome-workflow" target="_blank"
+              img src="images/products/alfred2-font-awesome-workflow.png"
+            div
+              time pubdate="2013-08-07" 2013.8.7
+              h2
+                a href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた
+              p
+                span 当時は
+                a href="http://blog.ruedap.com/2013/07/26/reboooot" ブログの再開
+                span が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、
+                a href="http://fontawesome.io/" Font Awesome
+                span を使ってる人で
+                a href="http://www.alfredapp.com/" Alfred
+                span を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。
+              p
+                span あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる
+                a href="https://github.com/ruedap/alfred2-font-awesome-workflow" Alfred 2用のプラグイン
+                span を作ってみた。
+              p
+                span 百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。
+            nav
+              a href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" 続きを読む
 
