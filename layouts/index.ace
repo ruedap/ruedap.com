@@ -8,8 +8,8 @@ html lang=ja
     link href="stylesheets/application.css" media="all" rel="stylesheet"
   body.Page
     .Container
-      header
-        h1.Banner
+      header.Banner
+        h1.Banner-heading
           img.Banner-image src="images/logo_ruedapcom.svg" alt="ルエダップコム"
         .Avatar
           img.Avatar-image src="images/logo_ruedap.png" alt="ruedap"
@@ -157,3 +157,18 @@ html lang=ja
                 p マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。
             nav.Product-more
               a.Product-moreLink href="http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram" 続きを読む
+
+      footer.Banner
+        h1.Banner-heading
+          img.Banner-image src="images/logo_ruedapcom.svg" alt="ルエダップコム"
+        .Avatar
+          img.Avatar-image src="images/logo_ruedap.png" alt="ruedap"
+        ul.LinkList.u-lire
+          li
+            a.LinkList-link href="https://twitter.com/ruedap" target="_blank" twitter
+          li
+            a.LinkList-link href="https://github.com/ruedap" target="_blank" github
+          li
+            a.LinkList-link href="mailto:ruedap@ruedap.com" mail
+          li
+            a.LinkList-link href="http://www.amazon.co.jp/wishlist/1NPRE7894OBKR/?sort=priority" target="_blank" wishlist

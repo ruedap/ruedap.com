@@ -131,6 +131,9 @@ h1, h2, h3, h4, h5, h6
 // ============================================================================
 
 .Banner
+  padding-bottom: 16rem
+
+.Banner-heading
   position: relative
   margin-bottom: 7rem
   text-align: center
@@ -157,7 +160,7 @@ h1, h2, h3, h4, h5, h6
 
 .LinkList
   position: relative
-  margin: 2rem auto 16rem
+  margin: 2rem auto 0
   text-align: center
   width: 58px
 
