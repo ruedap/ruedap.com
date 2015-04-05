@@ -2,6 +2,7 @@
 html lang=ja
   head
     title {{ .Title }}
+    link href="//fonts.googleapis.com/css?family=PT+Serif:400&subset=latin" media="all" rel="stylesheet"
     link href="stylesheets/normalize.css" media="all" rel="stylesheet"
     link href="stylesheets/emma.css" media="all" rel="stylesheet"
     link href="stylesheets/application.css" media="all" rel="stylesheet"
@@ -33,28 +34,29 @@ html lang=ja
           h1.ProductGroup-heading
             img src="images/section_products.svg" alt="プロダクツ"
 
-          article
-            h1.u-tehi アインシュタインの電話番号
-            a href="https://github.com/ruedap/daplog" target="_blank"
-              img src="images/products/daplog.png"
-            div
-              time pubdate="2013-11-11" 2013.11.11
-              h2
-                a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた
-              p  今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。
-              ul
-                li
-                  a href="http://tech.nitoyon.com/ja/blog/2012/09/20/moved-completed/" 俺の最強ブログ システムが火を噴くぜ - てっく煮ブログ
-                li
-                  a href="http://webtech-walker.com/archive/2012/09/fired-myblog.html" 俺の最強ブログシステムも火を噴いてたぜ - Webtech Walker
-              p
-                span 当時は
-                a href="http://blog.ruedap.com/2013/08/22/imakoko" それどころではなかった
-                span こともあって、なかなか着手できずにいたんだけど、
-                a href="http://blog.ruedap.com/2013/07/26/reboooot" 今年の7月頃
-                span から作り始めて、最近そこそこ希望通りの形になったので、まだやり残しはたくさんあるけれど、一旦ここで一区切りということでその内容を記事にしてみる。
-            nav
-              a href="http://blog.ruedap.com/2013/11/11/github-flow-blog" 続きを読む
+          article.Product
+            h1.Product-name.u-tehi アインシュタインの電話番号
+            a.Product-imageLink href="https://github.com/ruedap/daplog" target="_blank"
+              img.Product-image src="images/products/daplog.png"
+            div.Product-body
+              time.Product-time pubdate="2013-11-11" 2013.11.11
+              h2.Product-heading
+                a.Product-headingLink href="http://blog.ruedap.com/2013/11/11/github-flow-blog" Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた
+              .Product-description
+                p  今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。
+                ul
+                  li
+                    a href="http://tech.nitoyon.com/ja/blog/2012/09/20/moved-completed/" 俺の最強ブログ システムが火を噴くぜ - てっく煮ブログ
+                  li
+                    a href="http://webtech-walker.com/archive/2012/09/fired-myblog.html" 俺の最強ブログシステムも火を噴いてたぜ - Webtech Walker
+                p
+                  span 当時は
+                  a href="http://blog.ruedap.com/2013/08/22/imakoko" それどころではなかった
+                  span こともあって、なかなか着手できずにいたんだけど、
+                  a href="http://blog.ruedap.com/2013/07/26/reboooot" 今年の7月頃
+                  span から作り始めて、最近そこそこ希望通りの形になったので、まだやり残しはたくさんあるけれど、一旦ここで一区切りということでその内容を記事にしてみる。
+            nav.Product-more
+              a.Product-moreLink href="http://blog.ruedap.com/2013/11/11/github-flow-blog" 続きを読む
 
 
           article
@@ -79,6 +81,6 @@ html lang=ja
                 span を作ってみた。
               p
                 span 百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。
-            nav
-              a href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" 続きを読む
+            nav.Product-more
+              a.Product-moreLink href="http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow" 続きを読む
 

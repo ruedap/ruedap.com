@@ -9,6 +9,24 @@
   font-weight: normal
   font-style: normal
 
+@font-face
+  font-family: "YuMin"
+  src: local("YuMincho"), local("Yu Mincho"), local("游明朝")
+
+$font-family-mincho: "PT Serif", Georgia, "Times New Roman", Times, "YuMin", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "Hiragino Mincho ProN", "ＭＳ 明朝", serif
+$font-family-georgia: Georgia, "Times New Roman", Times, serif
+
+$width-avatar: 120px
+$max-width-product: 860px
+
+$color-body: #222222
+
+$bgcolor-product: #f2f2f2
+$bgcolor-border: #e4e4e4
+
+// Mixins
+// ============================================================================
+
 $dapicons()
   font-family: "dapicons"
   speak: none
@@ -25,10 +43,27 @@ $dapicons()
   line-height: 1
   -webkit-font-smoothing: antialiased
 
-$width-avatar: 120px
-$max-width-product: 860px
+$product-image-shadow()
+  position: relative
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset
+  &::before, &::after
+    content: ""
+    position: absolute
+    z-index: -1
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)
+    top: 50%
+    bottom: 0
+    left: 10px
+    right: 10px
+    border-radius: 100px 10px
 
-$bgcolor-border: #e4e4e4
+$link-decoration()
+  a
+    color: $color-body
+    text-decoration: none
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    &:hover
+      border-bottom: 1px solid rgba(0, 0, 0, 0.8)
 
 // Elements
 // ============================================================================
@@ -42,8 +77,10 @@ html
   font-size: 62.5%
 
 body
-  font-size: 1.6rem
   background-color: #ececec
+  color: $color-body
+  font-family: $font-family-mincho
+  font-size: 1.6rem
   -webkit-text-size-adjust: 100%
 
 img
@@ -135,15 +172,71 @@ h1, h2, h3, h4, h5, h6
 // ============================================================================
 
 .ProductGroup
-  margin-bottom: 7rem
+  margin-bottom: 20rem
   text-align: center
 
 .ProductGroup-heading
   margin-bottom: 4rem
 
 .ProductGroup-thumbnail
-  margin: 0 auto
+  margin-right: auto
+  margin-left: auto
   max-width: $max-width-product
 
 .ProductGroup-thumbnail--blog
   max-width: 500px
+
+// Product block
+// ============================================================================
+
+.Product
+  background-color: $bgcolor-product
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset
+  font-size: 1.6rem
+  margin-bottom: 20rem
+  margin-right: auto
+  margin-left: auto
+  max-width: $max-width-product
+  padding: 3.2rem
+
+.Product-name
+  font-size: 0
+  margin: 0
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+
+.Product-imageLink
+  display: block
+  margin-bottom: 3.2rem
+  margin-left: -12%
+  margin-right: -12%
+  max-width: 1000px
+
+.Product-image
+  $product-image-shadow()
+  width: 100%
+
+.Product-body
+  margin-bottom: 3.2rem
+
+.Product-time
+  display: block
+  font-family: $font-family-georgia
+  font-size: 2rem
+  margin-bottom: 2rem
+
+.Product-heading
+  font-size: 2.3rem
+
+.Product-headingLink
+  color: $color-body
+
+.Product-description
+  $link-decoration()
+  text-align: left
+
+.Product-more
+  $link-decoration()
+  margin-bottom: 2rem
+
