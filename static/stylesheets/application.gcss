@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6
     top: 0
     left: 50%
     display: block
-    width: 10px
+    width: 12px
     height: 100%
     content: ""
     transform: translateX(-50%)
