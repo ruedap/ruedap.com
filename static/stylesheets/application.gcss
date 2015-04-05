@@ -51,7 +51,6 @@ $product-image-shadow()
   &::before, &::after
     content: ""
     position: absolute
-    z-index: -1
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)
     top: 50%
     bottom: 0
@@ -100,34 +99,19 @@ h1, h2, h3, h4, h5, h6
 // ============================================================================
 
 .Page
-  padding-top: 14rem
-  position: relative
-  width: 100%
-  z-index: 0
-
-  &::before, &::after
-    position: absolute
-    top: 0
-    left: 50%
-    display: block
-    width: 12px
-    height: 100%
-    content: ""
-    transform: translateX(-50%)
-    background-color: $bgcolor-border
-
-  &::before
-    margin-left: -36px
-
-  &::after
-    margin-left: 36px
+  background-color: #e9e9e9
+  background-image: url("/images/bg_pattern.png")
+  background-repeat: repeat
 
 // Contaienr block
 // ============================================================================
 
 .Container
-  position: relative
-  z-index: 1
+  background-image: url("/images/bg_lines.png")
+  background-position: center top
+  background-repeat: repeat-y
+  padding-top: 14rem
+  width: 100%
 
 // Banner block
 // ============================================================================
@@ -202,6 +186,9 @@ h1, h2, h3, h4, h5, h6
   &:hover
     opacity: 1
 
+.ProductGroup-blogLogo
+  width: 100%
+
 // Product block
 // ============================================================================
 
@@ -255,4 +242,3 @@ h1, h2, h3, h4, h5, h6
 .Product-more
   $link-decoration()
   margin-bottom: 2rem
-

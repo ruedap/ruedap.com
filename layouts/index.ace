@@ -28,7 +28,7 @@ html lang=ja
             img src="images/section_blog.svg" alt="ブログ"
           div.ProductGroup-thumbnail.ProductGroup-thumbnail--blog
             a.ProductGroup-blogLogoLink href="http://blog.ruedap.com/"
-              img src="images/logo_einstein.svg"
+              img.ProductGroup-blogLogo src="images/logo_einstein.svg"
 
         section.ProductGroup
           h1.ProductGroup-heading
