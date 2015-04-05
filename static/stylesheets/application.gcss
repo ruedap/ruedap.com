@@ -171,6 +171,8 @@ h1, h2, h3, h4, h5, h6
   display: block
   padding: 1.6rem
   font-size: 2.6rem
+  transition-property: color
+  transition: 0.3s linear
   color: $color-link
   &:hover
     color: $color-link-hover
@@ -194,7 +196,9 @@ h1, h2, h3, h4, h5, h6
   max-width: 500px
 
 .ProductGroup-blogLogoLink
-  opacity: 0.8
+  transition-property: opacity
+  transition: 0.3s linear
+  opacity: 0.75
   &:hover
     opacity: 1
 
