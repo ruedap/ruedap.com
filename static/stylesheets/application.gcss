@@ -193,6 +193,11 @@ h1, h2, h3, h4, h5, h6
 .ProductGroup-thumbnail--blog
   max-width: 500px
 
+.ProductGroup-blogLogoLink
+  opacity: 0.8
+  &:hover
+    opacity: 1
+
 // Product block
 // ============================================================================
 

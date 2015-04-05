@@ -27,7 +27,7 @@ html lang=ja
           h1.ProductGroup-heading
             img src="images/section_blog.svg" alt="ブログ"
           div.ProductGroup-thumbnail.ProductGroup-thumbnail--blog
-            a href="http://blog.ruedap.com/"
+            a.ProductGroup-blogLogoLink href="http://blog.ruedap.com/"
               img src="images/logo_einstein.svg"
 
         section.ProductGroup
