@@ -26,6 +26,8 @@ $dapicons()
   -webkit-font-smoothing: antialiased
 
 $width-avatar: 120px
+$max-width-product: 860px
+
 $bgcolor-border: #e4e4e4
 
 // Elements
@@ -128,3 +130,20 @@ h1, h2, h3, h4, h5, h6
   padding: 1.6rem
   font-size: 2.6rem
   color: #b6b6b6
+
+// ProductGroup block
+// ============================================================================
+
+.ProductGroup
+  margin-bottom: 7rem
+  text-align: center
+
+.ProductGroup-heading
+  margin-bottom: 4rem
+
+.ProductGroup-thumbnail
+  margin: 0 auto
+  max-width: $max-width-product
+
+.ProductGroup-thumbnail--blog
+  max-width: 500px
