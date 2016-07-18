@@ -1,0 +1,28 @@
+/* Variables
+   ========================================================================== */
+
+:root {
+  --base-width: 120px;
+  --base-bg-color: #e4e4e4;
+}
+
+/* Block
+   ========================================================================== */
+
+.base {
+  background-color: var(--base-bg-color);
+  border-radius: 50%;
+  display: block;
+  height: var(--base-width);
+  width: var(--base-width);
+  padding: 10px;
+}
+
+/* Elements
+   ========================================================================== */
+
+.image {
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
