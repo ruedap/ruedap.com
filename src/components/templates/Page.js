@@ -12,8 +12,14 @@ export default class Page extends Component {
           <div className={styles.pageHeader}>
             <PageHeader />
           </div>
-          <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
-          <ProductList />
+
+          <section className={styles.section}>
+            <div className={styles.sectionTitle}>
+              <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
+            </div>
+            <ProductList />
+          </section>
+
           <div className={styles.pageHeader}>
             <PageHeader />
           </div>
