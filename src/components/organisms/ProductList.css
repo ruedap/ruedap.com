@@ -1,0 +1,24 @@
+/* Block
+   ========================================================================== */
+
+.root {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Elements
+   ========================================================================== */
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,53 @@
+/* Global
+   ========================================================================== */
+
+@value values: "./base.css";
+@value color_body from values;
+
+@font-face {
+  font-family: "dapicons";
+  src: url("/static/fonts/dapicons.eot");
+  src:
+    url("/static/fonts/dapicons.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/dapicons.woff") format("woff"),
+    url("/static/fonts/dapicons.ttf") format("truetype"),
+    url("/static/fonts/dapicons.svg#dapicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ececec;
+  color: color_body;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, "YuMin", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "Hiragino Mincho ProN", "ＭＳ 明朝", serif;
+  font-size: 1.6rem;
+}
+
+img {
+  vertical-align: text-bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* Block
+   ========================================================================== */
+
+.root {
+  display: block;
+}
