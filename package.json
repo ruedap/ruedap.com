@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "build": "npm run clean && NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "clean": "rm -rf ./dist/",
     "start": "node server.js",
     "lint": "eslint src"
   },
