@@ -1,3 +1,10 @@
+/* Variables
+   ========================================================================== */
+
+:root {
+  --marginBottom_section: 20rem;
+}
+
 /* Block
    ========================================================================== */
 
@@ -21,11 +28,11 @@
 }
 
 .section {
-  margin-bottom: 20rem;
+  margin-bottom: var(--marginBottom_section);
 }
 
 .pageHeader {
-  margin-bottom: 16rem;
+  margin-bottom: var(--marginBottom_section);
 }
 
 .blogLink {
