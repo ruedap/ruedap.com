@@ -15,6 +15,15 @@ export default class Page extends Component {
 
           <section className={styles.section}>
             <div className={styles.sectionTitle}>
+              <SectionTitle image="static/images/section_blog.svg" title="ブログ" />
+            </div>
+            <a className={styles.blogLink} href="http://blog.ruedap.com/">
+              <img src="static/images/logo_einstein.svg" alt="アインシュタインの電話番号" />
+            </a>
+          </section>
+
+          <section className={styles.section}>
+            <div className={styles.sectionTitle}>
               <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
             </div>
             <ProductList />
