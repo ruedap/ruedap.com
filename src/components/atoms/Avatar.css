@@ -2,19 +2,19 @@
    ========================================================================== */
 
 :root {
-  --base-width: 120px;
-  --base-bg-color: #e4e4e4;
+  --root-width: 120px;
+  --root-bgColor: #e4e4e4;
 }
 
 /* Block
    ========================================================================== */
 
 .root {
-  background-color: var(--base-bg-color);
+  background-color: var(--root-bgColor);
   border-radius: 50%;
   display: block;
-  height: var(--base-width);
-  width: var(--base-width);
+  height: var(--root-width);
+  width: var(--root-width);
   padding: 10px;
 }
 

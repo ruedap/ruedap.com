@@ -2,7 +2,7 @@
    ========================================================================== */
 
 :root {
-  --marginBottom_section: 20rem;
+  --section-marginBottom: 20rem;
 }
 
 /* Block
@@ -29,11 +29,11 @@
 }
 
 .section {
-  margin-bottom: var(--marginBottom_section);
+  margin-bottom: var(--section-marginBottom);
 }
 
 .pageHeader {
-  margin-bottom: var(--marginBottom_section);
+  margin-bottom: var(--section-marginBottom);
 }
 
 .blogLink {

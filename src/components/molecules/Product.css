@@ -5,7 +5,7 @@
 @value fontFamily_georgia from values;
 
 :root {
-  --product-image-shadow: {
+  --imageShadow: {
     position: relative;
     box-shadow:
       0 1px 4px rgba(0, 0, 0, 0.3),
@@ -51,7 +51,7 @@
 }
 
 .image {
-  @apply --product-image-shadow;
+  @apply --imageShadow;
   width: 100%;
 }
 
