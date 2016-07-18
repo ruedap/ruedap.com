@@ -76,13 +76,6 @@
   color: $color-body;
 }
 
-.description {
-  text-align: left;
-  line-height: 1.8;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 .more {
   margin-bottom: 2rem;
   text-align: center;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Product.css'
+import ProductDescription from '../atoms/ProductDescription'
 
 export default class Product extends Component {
   render() {
@@ -20,10 +21,7 @@ export default class Product extends Component {
               {this.props.heading}
             </a>
           </h2>
-          <div
-            className={styles.description}
-            dangerouslySetInnerHTML={html}
-          />
+          <ProductDescription description={this.props.description} />
         </div>
         <nav className={styles.more}>
           <a className={styles.moreLink} href={this.props.headingLink}>

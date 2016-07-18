@@ -16,8 +16,6 @@
 }
 
 .linkBorderBottom {
-  color: color_body;
-  text-decoration: none;
   border-bottom: 1px solid color_link;
 }
 
