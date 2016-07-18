@@ -1,9 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
-var customProperties = require('postcss-custom-properties');
-var apply = require('postcss-apply');
-var nested = require('postcss-nested');
+var common = require('./webpack.common');
 
 module.exports = {
   devtool: 'eval',
@@ -21,23 +18,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src')
-      },
-      {
-        test: /\.css$/,
-        loaders: [
-          'style',
-          'css?modules&localIdentName=[name]-[local]---[hash:base64:21]',
-          'postcss',
-        ],
-      },
-    ]
+    loaders: common.loaders,
   },
-  postcss: function () {
-      return [autoprefixer, customProperties, apply, nested];
-  }
+  postcss: common.postcss
 };
