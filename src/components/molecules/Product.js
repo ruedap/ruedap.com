@@ -9,8 +9,7 @@ export default class Product extends Component {
       <article className={styles.root_wideImage}>
         <h1 className={styles.name}>{this.props.name}</h1>
         <a className={styles.imageLink} href={this.props.imageLink}>
-          <img className={styles.image} src={this.props.image} alt={this.props.name}
- />
+          <img className={styles.image} src={this.props.image} alt={this.props.name} />
         </a>
         <div className={styles.body}>
           <time className={styles.time} pubdate={this.props.pubdate}>

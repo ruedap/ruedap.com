@@ -19,7 +19,7 @@
    ========================================================================== */
 
 .lines {
-  /*TODO: height: 100%*/
+  /* TODO: height: 100% */
   background-image: url("/static/images/bg_lines.png");
   background-position: center top;
   background-repeat: repeat-y;
@@ -47,9 +47,6 @@
   &:hover {
     opacity: 1;
   }
-}
-
-.blogLogo {
 }
 
 .sectionTitle {
