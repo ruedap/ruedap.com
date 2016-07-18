@@ -1,3 +1,7 @@
+:root {
+  --margin-top: 12em;
+}
+
 /* Block
    ========================================================================== */
 
@@ -8,7 +12,7 @@
 
 .base_modifier {
   composes: base;
-  margin-top: 10em;
+  margin-top: var(--margin-top);
 }
 
 /* Elements
