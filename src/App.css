@@ -3,6 +3,7 @@
 
 .base {
   text-align: center;
+  display: flex;
 }
 
 .base_modifier {
