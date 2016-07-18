@@ -1,13 +1,16 @@
 :root {
   --margin-top: 12em;
+  --base: {
+    text-align: center;
+    display: flex;
+  };
 }
 
 /* Block
    ========================================================================== */
 
 .base {
-  text-align: center;
-  display: flex;
+  @apply --base;
 }
 
 .base_modifier {

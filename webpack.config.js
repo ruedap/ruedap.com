@@ -1,7 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-var customProperties = require("postcss-custom-properties");
+var customProperties = require('postcss-custom-properties');
+var apply = require('postcss-apply');
 
 module.exports = {
   devtool: 'eval',
@@ -36,6 +37,6 @@ module.exports = {
     ]
   },
   postcss: function () {
-      return [autoprefixer, customProperties];
+      return [autoprefixer, customProperties, apply];
   }
 };
