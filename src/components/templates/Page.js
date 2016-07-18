@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import styles from './App.css'
-import Page from './templates/Page';
+import styles from './Page.css'
 
-export default class App extends Component {
+export default class Page extends Component {
   render() {
     return (
       <div className={styles.base}>
-        <Page />
+        Page!
       </div>
     );
   }
