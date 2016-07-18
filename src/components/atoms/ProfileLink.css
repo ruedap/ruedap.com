@@ -1,0 +1,22 @@
+/* Variables
+   ========================================================================== */
+
+@value values: "../base.css";
+@value color_link from values;
+@value color_linkHover from values;
+
+/* Block
+   ========================================================================== */
+
+.root {
+  display: block;
+  padding: 1.6rem;
+  font-size: 2.6rem;
+  transition-property: color;
+  transition: 0.3s linear;
+  color: color_link;
+
+  &:hover {
+    color: color_linkHover;
+  }
+}
