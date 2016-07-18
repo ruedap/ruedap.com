@@ -5,7 +5,7 @@ import Page from './templates/Page';
 export default class App extends Component {
   render() {
     return (
-      <div className={styles.base}>
+      <div className={styles.root}>
         <Page />
       </div>
     );

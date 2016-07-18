@@ -9,7 +9,7 @@
 /* Block
    ========================================================================== */
 
-.base {
+.root {
   background-color: var(--base-bg-color);
   border-radius: 50%;
   display: block;

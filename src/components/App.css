@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --margin-top: 12em;
-  --base: {
+  --root: {
     text-align: center;
     display: flex;
   };
@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Block
    ========================================================================== */
 
-.base {
-  @apply --base;
+.root {
+  @apply --root;
 }
 
-.base_modifier {
-  composes: base;
+.root_modifier {
+  composes: root;
   margin-top: var(--margin-top);
 }
 

@@ -5,7 +5,7 @@ import PageHeader from '../organisms/PageHeader';
 export default class Page extends Component {
   render() {
     return (
-      <div className={styles.base}>
+      <div className={styles.root}>
         <PageHeader />
       </div>
     );

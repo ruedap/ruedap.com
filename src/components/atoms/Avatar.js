@@ -4,7 +4,7 @@ import styles from './Avatar.css'
 export default class Avatar extends Component {
   render() {
     return (
-      <div className={styles.base}>
+      <div className={styles.root}>
         <img className={styles.image} src="static/images/logo_ruedap.png" alt="ruedap" />
       </div>
     );
