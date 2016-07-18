@@ -1,0 +1,27 @@
+/* Values
+   ========================================================================== */
+
+@value color_body: #222222;
+@value color_link: #b6b6b6;
+@value color_linkHover: #434343;
+
+@value fontFamily_georgia: Georgia, "Times New Roman", Times, serif;
+
+/* Composes
+   ========================================================================== */
+
+.linkDecoration {
+  color: color_body;
+  text-decoration: none;
+}
+
+.linkBorderBottom {
+  color: color_body;
+  text-decoration: none;
+  border-bottom: 1px solid color_link;
+}
+
+/* https://github.com/css-modules/css-modules/issues/80#issuecomment-155497797 */
+.linkBorderBottom_hover:hover {
+  border-bottom: 1px solid color_linkHover;
+}

@@ -1,8 +1,8 @@
 /* Global
    ========================================================================== */
 
-@value values: "./values.css";
-@value COLOR_BODY from values;
+@value values: "./base.css";
+@value color_body from values;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 
 body {
   background-color: #ececec;
-  color: COLOR_BODY;
+  color: color_body;
   font-family: "PT Serif", Georgia, "Times New Roman", Times, "YuMin", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "Hiragino Mincho ProN", "ＭＳ 明朝", serif;
   font-size: 1.6rem;
 }

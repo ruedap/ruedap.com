@@ -1,0 +1,109 @@
+/* Variables
+   ========================================================================== */
+
+@value values: "../base.css";
+@value fontFamily_georgia from values;
+
+:root {
+  --product-image-shadow: {
+    position: relative;
+    box-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(0, 0, 0, 0.2) inset;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      top: 50%;
+      bottom: 0;
+      left: 10px;
+      right: 10px;
+      border-radius: 100px 10px;
+    }
+  }
+}
+
+/* Block
+   ========================================================================== */
+
+.root {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset;
+  font-size: 1.6rem;
+  /*margin-bottom: 20rem;*/
+  /*margin-right: auto;
+  margin-left: auto;*/
+  max-width: 860px;
+  padding: 3.2rem;
+}
+
+/* Elements
+   ========================================================================== */
+
+.name {
+  display: none;
+}
+
+.imageLink {
+  display: block;
+  margin-bottom: 3.2rem;
+  max-width: 1000px;
+}
+
+.image {
+  @apply --product-image-shadow;
+  width: 100%;
+}
+
+.body {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.time {
+  display: block;
+  font-family: fontFamily_georgia;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 2.3rem;
+}
+
+.headingLink {
+  composes: linkDecoration from "../base.css";
+  color: $color-body;
+}
+
+.description {
+  text-align: left;
+  line-height: 1.8;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.more {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.moreLink {
+  composes: linkDecoration from "../base.css";
+  composes: linkBorderBottom linkBorderBottom_hover from "../base.css";
+}
+
+/* Modifiers
+   ========================================================================== */
+
+/* コンテンツ幅より広い画像で表示するモディファイア */
+.root_wideImage {
+  composes: root;
+
+  .imageLink {
+    margin-left: -12%;
+    margin-right: -12%;
+  }
+}
