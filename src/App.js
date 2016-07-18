@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import styles from './App.css'
 
 export default class App extends Component {
   render() {
     return (
-      <h1>Hello, world.</h1>
+      <div className={styles.base_modifier}>
+        <h1 className={styles.heading_modifier}>Hello, world.</h1>
+      </div>
     );
   }
 }

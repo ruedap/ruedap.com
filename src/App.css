@@ -1,0 +1,24 @@
+/* Block
+   ========================================================================== */
+
+.base {
+  text-align: center;
+}
+
+.base_modifier {
+  composes: base;
+  margin-top: 10em;
+}
+
+/* Elements
+   ========================================================================== */
+
+.heading {
+  color: red;
+  font-size: 12px;
+}
+
+.heading_modifier {
+  composes: heading;
+  color: blue;
+}
