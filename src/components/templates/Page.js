@@ -6,7 +6,9 @@ export default class Page extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <PageHeader />
+        <div className={styles.padding}>
+          <PageHeader />
+        </div>
       </div>
     );
   }

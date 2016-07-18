@@ -17,7 +17,6 @@ body {
   color: COLOR_BODY;
   font-family: "PT Serif", Georgia, "Times New Roman", Times, "YuMin", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "Hiragino Mincho ProN", "ＭＳ 明朝", serif;
   font-size: 1.6rem;
-  margin: 100px;
 }
 
 img {
@@ -37,35 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Variables
    ========================================================================== */
 
-:root {
-  --margin-top: 12em;
-  --root: {
-    text-align: center;
-    display: flex;
-  };
-}
-
 /* Block
    ========================================================================== */
 
 .root {
-  @apply --root;
-}
-
-.root_modifier {
-  composes: root;
-  margin-top: var(--margin-top);
+  display: block;
 }
 
 /* Elements
    ========================================================================== */
-
-.heading {
-  color: red;
-  font-size: 12px;
-}
-
-.heading_modifier {
-  composes: heading;
-  color: blue;
-}
