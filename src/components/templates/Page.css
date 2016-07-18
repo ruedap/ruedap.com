@@ -20,6 +20,7 @@
 
 .lines {
   /* TODO: height: 100% */
+  display: block;
   background-image: url("/static/images/bg_lines.png");
   background-position: center top;
   background-repeat: repeat-y;
