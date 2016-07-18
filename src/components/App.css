@@ -1,3 +1,39 @@
+/* Global
+   ========================================================================== */
+
+@value values: "./values.css";
+@value COLOR_BODY from values;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ececec;
+  color: COLOR_BODY;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, "YuMin", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "Hiragino Mincho ProN", "ＭＳ 明朝", serif;
+  font-size: 1.6rem;
+  margin: 100px;
+}
+
+img {
+  vertical-align: text-bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
 /* Variables
    ========================================================================== */
 
