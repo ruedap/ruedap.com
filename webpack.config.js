@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var customProperties = require('postcss-custom-properties');
 var apply = require('postcss-apply');
+var nested = require('postcss-nested');
 
 module.exports = {
   devtool: 'eval',
@@ -37,6 +38,6 @@ module.exports = {
     ]
   },
   postcss: function () {
-      return [autoprefixer, customProperties, apply];
+      return [autoprefixer, customProperties, apply, nested];
   }
 };
