@@ -7,7 +7,7 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'static'),
+    path: path.join(__dirname, 'dist/static'),
     filename: 'bundle.js'
   },
   resolve: {
