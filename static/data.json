@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "アインシュタインの電話番号",
+      "imageLink": "https://github.com/ruedap/daplog",
+      "image": "static/images/products/daplog.png",
+      "time": "2013.11.11",
+      "pubdate": "2013-11-11",
+      "heading": "Pull RequestとCIを使ったGitHub Flowなブログ環境を作ってみた",
+      "headingLink": "http://blog.ruedap.com/2013/11/11/github-flow-blog",
+      "description": "<div><p>今から1年ほど前に、自分でお気に入りのブログ環境を構築する記事が話題になっていて、それを読んだ時から、自分用のブログ環境を作りたいと思っていた。</p><ul><li><a href=\"http://tech.nitoyon.com/ja/blog/2012/09/20/moved-completed/\">俺の最強ブログ システムが火を噴くぜ - てっく煮ブログ</a></li><li><a href=\"http://webtech-walker.com/archive/2012/09/fired-myblog.html\">俺の最強ブログシステムも火を噴いてたぜ - Webtech Walker</a></li></ul><p><span>当時は</span><a href=\"http://blog.ruedap.com/2013/08/22/imakoko\">それどころではなかった</a><span>こともあって、なかなか着手できずにいたんだけど、</span><a href=\"http://blog.ruedap.com/2013/07/26/reboooot\">今年の7月頃</a><span>から作り始めて、最近そこそこ希望通りの形になったので、まだやり残しはたくさんあるけれど、一旦ここで一区切りということでその内容を記事にしてみる。</span></p></div>"
+    },
+    {
+      "id": 2,
+      "name": "Font Awesome Workflow for Alfred",
+      "imageLink": "https://github.com/ruedap/alfred-font-awesome-workflow",
+      "image": "static/images/products/alfred2-font-awesome-workflow.png",
+      "time": "2013.8.7",
+      "pubdate": "2013-08-07",
+      "heading": "Font Awesomeのアイコンを検索できるAlfred 2のWorkflowを作ってみた",
+      "headingLink": "http://blog.ruedap.com/2013/08/07/alfred2-font-awesome-workflow",
+      "description": "<div><p><span>当時は</span><a href=\"http://blog.ruedap.com/2013/07/26/reboooot\">ブログの再開</a><span>が2年ぶりだったけど、作ってみたシリーズも同じく2年ぶり。お久しぶり。さて今回は、ものすっごくニッチなツールだけど、</span><a href=\"http://fontawesome.io/\">Font Awesome</a><span>を使ってる人で</span><a href=\"http://www.alfredapp.com/\">Alfred</a><span>を使ってる人には喜んでもらえる気がする。イコール自分のことなんですけどね。</span></p><p><span>あのアイコンフォントのクラス名を全然覚えられなくて、アイコンの数も300個以上あって把握できなくなっていて、毎回Font Awesomeのサイトを開いて探すのも面倒なので、 Font Awesomeのアイコンをインクリメンタルサーチしてそのクラス名をペーストできる</span><a href=\"https://github.com/ruedap/alfred2-font-awesome-workflow\">Alfred 2用のプラグイン</a><span>を作ってみた。</span></p><p><span>百聞は一見に如かず、どんなものかは以下のスクリーンキャストをご覧ください。</span></p></div>"
+    },
+    {
+      "id": 3,
+      "name": "ウタダヒカループ",
+      "imageLink": "http://uhloop.com",
+      "image": "static/images/products/uhloop.png",
+      "time": "2011.8.11",
+      "pubdate": "2011-08-11",
+      "heading": "宇多田ヒカル大好き専用「ウタダヒカループ」を作ってみた",
+      "headingLink": "http://blog.ruedap.com/entry/20110811/uhloop",
+      "description": "<div><p><a href=\"http://blog.ruedap.com/entry/20110807/reizouko_driven_development\">冷蔵庫で設計したWebアプリ</a><span>、宇多田ヒカル大好き専用PVビューアー「ウタダヒカループ」を8月8日にリリースしました。今回のWebアプリの制作理由をざっくりまとめると以下の2点です。</span></p><ul><li>ブラウザに uhloop.com とだけ打ち込めば、すぐに、ずっと、宇多田ヒカルを聴いていられる・観ていられるサービスが欲しかった。</li><li>活動休止ライブのDVD「WILD LIFE」で、宇多田さんがとても楽しそうに「ぼんじゅーる!!」を観客と言い合っているシーンを観ていたら、自分もぼんじゅーるしたくなった。</li></ul><p></p></div>"
+    },
+    {
+      "id": 4,
+      "name": "SASSIENCE ～ 世界が嫉妬するCSSへ",
+      "imageLink": "http://sassience.com",
+      "image": "static/images/products/sassience.png",
+      "time": "2011.5.26",
+      "pubdate": "2011-05-26",
+      "heading": "CSSのインデントを綺麗にするサービス「SASSIENCE」を作ってみた",
+      "headingLink": "http://blog.ruedap.com/entry/20110526/css_indent_nest_beauty_service_sassience",
+      "description": "<div><p>SASSIENCEは、簡単に言えばCSSのインデントやネストを綺麗に整形するサービスです。簡単に言わなくても、それだけの機能しかありません。</p><p>トップページの画面中央の入力フォームに、綺麗にしたいCSSのデータをペーストして、好みの2タイプ（括弧の綴じ方の違い）を選ぶと、インデントとネストが綺麗に整形されます。また、入力データがCSSの記法として正しくない場合は変換に失敗し、その原因予想を提示するので、簡易的なバリデータとしても利用できます。ただし、変換失敗時の原因予想はあくまでも予想なので、的外れなこともあります。この変換技術には、CSSを簡潔に記述できる「Sass」というRubyのライブラリを利用しています。</p></div>"
+    },
+    {
+      "id": 5,
+      "name": "はてなスターカウンター",
+      "imageLink": "http://hatenastar.heroku.com/",
+      "image": "static/images/products/hatenastar.png",
+      "time": "2011.4.21",
+      "pubdate": "2011-04-21",
+      "heading": "はてなスターの総数を表示できる「はてなスターカウンター」を作ってみた",
+      "headingLink": "http://blog.ruedap.com/entry/20110421/hatenastar_counter",
+      "description": "<div><p>はてなスターって、とても良いサービスだと思うんだけど、いまいちパッとしないというか、地味というか、微妙に使いづらいというか、まぁそういうところも含めて好きなんだけど。</p><p>はてなブックマークと役割が若干かぶってて、最近TwitterのTweetボタンやFacebookのいいね！などに押され気味で、なおかつ、もうすぐGoogle先生が+1ボタンというのを出してくるので、今後さらに目立たなくなってしまいそうなはてなスター。それでも自分の書いたブログ記事にスターを付けてもらえると嬉しいし、使う側から見ても前述の他のサービスに比べるとはてなスターは最も気軽に使えるサービスだと思う。昨今流行りの魔法の言葉じゃないけど、気軽にスターを付けて「読んだよ！」「だよね！」「ありがとう！」などのいろいろな意味やシチュエーションで今後も使っていきたい。そんなはてなスターという素敵なサービスに、この「はてなスターカウンター」がちょっとでもお力添えできればこれ幸い。</p></div>"
+    },
+    {
+      "id": 6,
+      "name": "Inustagram - いぬ大好き専用Instagram",
+      "imageLink": "http://inustagram.com",
+      "image": "static/images/products/inustagram.png",
+      "time": "2011.3.5",
+      "pubdate": "2011-03-05",
+      "heading": "二匹目のどじょうを狙っていぬ大好き専用の「Inustagram」を作ってみた",
+      "headingLink": "http://blog.ruedap.com/entry/20110305/instagram_api_of_exclusive_use_for_dog_lovers_inustagram",
+      "description": "<div><p>前作ネコスタグラムの公開から約1週間。ビバ土日。2匹目のドジョウを狙って、ネコスタグラム公開後にいただいた反響の中で多かった「犬バージョンはまだ？」というリクエストにおこたえして、いぬ大好き専用Instagramビューアー、イヌスタグラム。</p><p>本家Instagramと一瞬見分けのつかないちょっとグレーなWebアプリ名な上に、前作の検索対象を「cat」から「dog」に変えただけのかんたん複製アプリでございます。</p></div>"
+    },
+    {
+      "id": 7,
+      "name": "Nekostagram - ねこ大好き専用Instagram",
+      "imageLink": "http://http://nekostagram.com.com",
+      "image": "static/images/products/nekostagram.png",
+      "time": "2011.2.28",
+      "pubdate": "2011-02-28",
+      "heading": "Instagram APIを使ってねこ大好き専用の「Nekostagram」を作ってみた",
+      "headingLink": "http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram",
+      "description": "<div><p>（ドヤッ）ってな感じのWebアプリ名を付けちゃったけど、そんな大層なものではなく、ページを読み込むたびにInstagramのAPIでネコ写真をちょっとずつ取ってきて、そのネコ写真と撮影者のコメントを一覧表示してるだけのペライチなサイトでございます。</p><p>マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。</p></div>"
+    }
+  ]
+}
