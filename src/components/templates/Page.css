@@ -50,6 +50,10 @@
   }
 }
 
+.blogLogo {
+  width: 100%;
+}
+
 .sectionTitle {
   text-align: center;
   margin-bottom: 4rem;
