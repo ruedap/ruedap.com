@@ -18,7 +18,7 @@ export default class Page extends Component {
               <SectionTitle image="static/images/section_blog.svg" title="ブログ" />
             </div>
             <a className={styles.blogLink} href="http://blog.ruedap.com/">
-              <img src="static/images/logo_einstein.svg" alt="アインシュタインの電話番号" />
+              <img className={styles.blogLogo} src="static/images/logo_einstein.svg" alt="アインシュタインの電話番号" />
             </a>
           </section>
 

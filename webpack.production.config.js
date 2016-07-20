@@ -6,6 +6,8 @@ var copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
+    'babel-polyfill',
+    'whatwg-fetch',
     './src/index.js'
   ],
   output: {

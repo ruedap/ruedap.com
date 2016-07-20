@@ -24,7 +24,9 @@ export default class Product extends Component {
         </div>
         <nav className={styles.more}>
           <a className={styles.moreLink} href={this.props.headingLink}>
-            続きを読む
+            {/*TODO: 日本語だとbuild時に文字化けする*/}
+            {/*続きを読む*/}
+            more
           </a>
         </nav>
       </article>
