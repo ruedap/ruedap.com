@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class BlogLogo extends Component {
   render() {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" enable-background="new 0 0 500 200" cursor="pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" enableBackground="new 0 0 500 200" cursor="pointer">
         <title>アインシュタインの電話番号</title>
         <line stroke="#474747" strokeWidth=".5" x1="44.15" y1="25.32" x2="305.21" y2="25.32" fill="none"/>
         <line stroke="#474747" strokeWidth=".5" x1="44.15" y1="31.23" x2="44.15" y2="19.31" fill="none"/>
