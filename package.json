@@ -36,6 +36,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "react-svg": "^1.1.2"
   }
 }
