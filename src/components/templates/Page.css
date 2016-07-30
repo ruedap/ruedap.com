@@ -36,10 +36,6 @@
 }
 
 .blogLink {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
   transition-property: opacity;
   transition: 0.3s linear;
   opacity: 0.75;
@@ -49,12 +45,6 @@
   }
 }
 
-.blogLogo {
-  width: 100%;
-  height: auto;
-}
-
 .sectionTitle {
-  text-align: center;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
