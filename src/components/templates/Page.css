@@ -3,6 +3,7 @@
 
 :root {
   --section-marginBottom: 20rem;
+  --pageHeader-paddingX: 6rem;
 }
 
 /* Block
@@ -19,20 +20,18 @@
    ========================================================================== */
 
 .lines {
-  /* TODO: height: 100% */
-  display: block;
   background-image: url("/static/images/bg_lines.png");
   background-position: center top;
   background-repeat: repeat-y;
-  width: 100%;
-  padding: 100px;
-}
-
-.section {
-  margin-bottom: var(--section-marginBottom);
 }
 
 .pageHeader {
+  padding-top: var(--pageHeader-paddingX);
+  padding-bottom: var(--pageHeader-paddingX);
+  min-height: 100vh;
+}
+
+.section {
   margin-bottom: var(--section-marginBottom);
 }
 
@@ -52,6 +51,7 @@
 
 .blogLogo {
   width: 100%;
+  height: auto;
 }
 
 .sectionTitle {

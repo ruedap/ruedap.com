@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
+import classNames from 'classnames/bind';
+
 import styles from './Page.css'
 import PageHeader from '../organisms/PageHeader';
 import ProductList from '../organisms/ProductList';
 import SectionTitle from '../atoms/SectionTitle';
 
+let cx = classNames.bind(styles);
+
 export default class Page extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <div className={styles.lines}>
-          <div className={styles.pageHeader}>
+        <div className={cx('g- -ng -co', 'lines')}>
+          <div className={cx('g_ g- -ng -c -m', 'pageHeader')}>
             <PageHeader />
           </div>
 
-          <section className={styles.section}>
+          <section className={cx('g_', 'section')}>
             <div className={styles.sectionTitle}>
               <SectionTitle image="static/images/section_blog.svg" title="ブログ" />
             </div>
@@ -22,14 +26,14 @@ export default class Page extends Component {
             </a>
           </section>
 
-          <section className={styles.section}>
+          <section className={cx('g_', 'section')}>
             <div className={styles.sectionTitle}>
               <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
             </div>
             <ProductList />
           </section>
 
-          <div className={styles.pageHeader}>
+          <div className={cx('g_ g- -ng -c -m', 'pageHeader')}>
             <PageHeader />
           </div>
         </div>
