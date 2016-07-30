@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import ReactSVG from 'react-svg/dist/react-svg.js';
 import classNames from 'classnames/bind';
 
 import styles from './Page.css'
 import PageHeader from '../organisms/PageHeader';
 import ProductList from '../organisms/ProductList';
-import SectionTitle from '../atoms/SectionTitle';
 import BlogLogo from '../atoms/BlogLogo';
 
 let cx = classNames.bind(styles);
@@ -19,9 +19,9 @@ export default class Page extends Component {
           </div>
 
           <section className={cx('g_', 'section')}>
-            <div className={styles.sectionTitle}>
-              <SectionTitle image="static/images/section_blog.svg" title="ブログ" />
-            </div>
+            <h1 className={styles.sectionTitle}>
+              <ReactSVG path={'static/images/section_blog.svg'} />
+            </h1>
             <a className={styles.blogLink} href="http://blog.ruedap.com/">
               <div className={styles.blogLogo}>
                 <BlogLogo />
@@ -30,9 +30,9 @@ export default class Page extends Component {
           </section>
 
           <section className={cx('g_', 'section')}>
-            <div className={styles.sectionTitle}>
-              <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
-            </div>
+            <h1 className={styles.sectionTitle}>
+              <ReactSVG path={'static/images/section_products.svg'} />
+            </h1>
             <ProductList />
           </section>
 
