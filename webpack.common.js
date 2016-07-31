@@ -16,7 +16,7 @@ module.exports = {
       test: /\.css$/,
       loaders: [
         'style',
-        'css?modules&localIdentName=[name]-[local]---[hash:base64:21]',
+        'css?modules&localIdentName=[name]-[local]---[hash:base64:6]',
         'postcss',
       ],
     },
