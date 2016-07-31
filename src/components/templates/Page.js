@@ -1,35 +1,44 @@
 import React, { Component } from 'react';
+import ReactSVG from 'react-svg/dist/react-svg.js';
+import classNames from 'classnames/bind';
+
 import styles from './Page.css'
 import PageHeader from '../organisms/PageHeader';
 import ProductList from '../organisms/ProductList';
-import SectionTitle from '../atoms/SectionTitle';
+import BlogLogo from '../atoms/BlogLogo';
+
+let cx = classNames.bind(styles);
 
 export default class Page extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <div className={styles.lines}>
-          <div className={styles.pageHeader}>
+        <div className={cx('g- -ng -co', 'lines')}>
+          <div className={cx('g_ _0 g- -ng -c -m', 'pageHeader')}>
             <PageHeader />
           </div>
 
-          <section className={styles.section}>
-            <div className={styles.sectionTitle}>
-              <SectionTitle image="static/images/section_blog.svg" title="ブログ" />
+          <section className={cx('g_ _0', 'section')}>
+            <h1 className={cx('g- -ng -c', 'sectionTitle')}>
+              <ReactSVG path={'static/images/section_blog.svg'} />
+            </h1>
+            <div className={'g- -ng -c'}>
+              <a className={styles.blogLink} href="http://blog.ruedap.com/">
+                <BlogLogo />
+              </a>
             </div>
-            <a className={styles.blogLink} href="http://blog.ruedap.com/">
-              <img className={styles.blogLogo} src="static/images/logo_einstein.svg" alt="アインシュタインの電話番号" />
-            </a>
           </section>
 
-          <section className={styles.section}>
-            <div className={styles.sectionTitle}>
-              <SectionTitle image="static/images/section_products.svg" title="プロダクツ"/>
+          <section className={cx('g_ _0', 'section')}>
+            <h1 className={cx('g- -ng -c', 'sectionTitle')}>
+              <ReactSVG path={'static/images/section_products.svg'} />
+            </h1>
+            <div className={'g- -ng -c'}>
+              <ProductList />
             </div>
-            <ProductList />
           </section>
 
-          <div className={styles.pageHeader}>
+          <div className={cx('g_ _0 g- -ng -c -m', 'pageHeader')}>
             <PageHeader />
           </div>
         </div>

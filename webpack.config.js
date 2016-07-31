@@ -5,7 +5,7 @@ var common = require('./webpack.common');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:3001',
+    'webpack-dev-server/client?http://0.0.0.0:3001',
     'webpack/hot/only-dev-server',
     'babel-polyfill',
     'whatwg-fetch',

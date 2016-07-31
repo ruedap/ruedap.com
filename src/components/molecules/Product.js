@@ -12,7 +12,7 @@ export default class Product extends Component {
           <img className={styles.image} src={this.props.image} alt={this.props.name} />
         </a>
         <div className={styles.body}>
-          <time className={styles.time} pubdate={this.props.pubdate}>
+          <time className={styles.time} dateTime={this.props.pubdate}>
             {this.props.time}
           </time>
           <h2 className={styles.heading}>
