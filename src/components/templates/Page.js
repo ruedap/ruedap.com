@@ -22,7 +22,7 @@ export default class Page extends Component {
             <h1 className={cx('g- -ng -c', 'sectionTitle')}>
               <ReactSVG path={'static/images/section_blog.svg'} />
             </h1>
-            <div className={cx('g- -ng -c', 'blogLogo')}>
+            <div className={'g- -ng -c'}>
               <a className={styles.blogLink} href="http://blog.ruedap.com/">
                 <BlogLogo />
               </a>
@@ -33,7 +33,7 @@ export default class Page extends Component {
             <h1 className={cx('g- -ng -c', 'sectionTitle')}>
               <ReactSVG path={'static/images/section_products.svg'} />
             </h1>
-            <div className="g- -ng -c">
+            <div className={'g- -ng -c'}>
               <ProductList />
             </div>
           </section>
