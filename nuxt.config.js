@@ -47,8 +47,13 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: ['~/assets/stylesheets/abstractions.scss']
+  },
+
   /*
    ** Axios module configuration
    */
