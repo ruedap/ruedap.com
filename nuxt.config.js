@@ -1,4 +1,11 @@
 import pkg from './package'
+import Fiber from 'fibers'
+import Sass from 'sass'
+
+const customSass = {
+  implementation: Sass,
+  fiber: Fiber
+}
 
 export default {
   mode: 'universal',
@@ -28,7 +35,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/stylesheets/basics.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -53,6 +60,9 @@ export default {
    ** Build configuration
    */
   build: {
+    loaders: {
+      scss: customSass
+    },
     /*
      ** You can extend webpack config here
      */
