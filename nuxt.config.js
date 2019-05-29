@@ -68,6 +68,7 @@ export default {
     loaders: {
       scss: customSass
     },
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
