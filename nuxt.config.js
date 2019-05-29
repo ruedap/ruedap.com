@@ -69,6 +69,7 @@ export default {
       scss: customSass
     },
     extractCSS: true,
+    publicPath: '/assets/',
     /*
      ** You can extend webpack config here
      */
