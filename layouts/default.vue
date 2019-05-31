@@ -1,38 +1,42 @@
 <template lang="pug">
-.container
-  .container-inner
-    .header
-      logo
-    .content
+div(:class="$style.root")
+  div(:class="$style.inner")
+    div(:class="$style.header")
+      page-header
+    div
       nuxt
+    div(:class="$style.header")
+      page-header
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import PageHeader from '~/components/PageHeader.vue'
 export default {
   components: {
-    Logo
+    PageHeader
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.container {
+<style lang="scss" module>
+.root {
   background-image: url('~assets/images/bg-pattern.png');
   background-repeat: repeat;
 }
 
-.container-inner {
+.inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url('~assets/images/bg-lines.png');
   background-position: center top;
   background-repeat: repeat-y;
-  padding: 6rem;
 }
 
 .header {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
+  padding: 6rem;
 }
 </style>
