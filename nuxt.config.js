@@ -48,7 +48,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-svg-loader'
   ],
   styleResources: {
     scss: ['~/assets/stylesheets/abstractions.scss']
