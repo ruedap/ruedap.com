@@ -1,2 +1,94 @@
-$a-color-body: #fefefe;
-$a-color-logo: #369;
+// =============================================================================
+// colors
+// =============================================================================
+
+// Bootstrap ベース
+// https://github.com/twbs/bootstrap/blob/v4.3.1/scss/_variables.scss#L8
+// -----------------------------------------------------------------------------
+
+@mixin a-linkColors(
+  $normal: null,
+  $hover: null,
+  $active: null,
+  $visited: null,
+  $focus: null
+) {
+  @if $normal != null {
+    @if $hover == null {
+      $hover: $normal;
+    }
+    @if $active == null {
+      $active: $normal;
+    }
+    @if $visited == null {
+      $visited: $normal;
+    }
+  }
+
+  @if $normal {
+    color: $normal;
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+}
+
+$a-color-white: #fff !default;
+$a-color-gray-100: #f8f9fa !default;
+$a-color-gray-200: #e9ecef !default;
+$a-color-gray-300: #dee2e6 !default;
+$a-color-gray-400: #ced4da !default;
+$a-color-gray-500: #adb5bd !default;
+$a-color-gray-600: #868e96 !default;
+$a-color-gray-700: #495057 !default;
+$a-color-gray-800: #343a40 !default;
+$a-color-gray-900: #212529 !default;
+$a-color-black: #000 !default;
+
+$a-color-blue: #007bff !default;
+$a-color-indigo: #6610f2 !default;
+$a-color-purple: #6f42c1 !default;
+$a-color-pink: #e83e8c !default;
+$a-color-red: #dc3545 !default;
+$a-color-orange: #fd7e14 !default;
+$a-color-yellow: #ffc107 !default;
+$a-color-green: #28a745 !default;
+$a-color-teal: #20c997 !default;
+$a-color-cyan: #17a2b8 !default;
+
+$a-color-primary: $a-color-blue !default;
+$a-color-secondary: $a-color-gray-600 !default;
+$a-color-success: $a-color-green !default;
+$a-color-info: $a-color-cyan !default;
+$a-color-warning: $a-color-yellow !default;
+$a-color-danger: $a-color-red !default;
+$a-color-light: $a-color-gray-100 !default;
+$a-color-dark: $a-color-gray-800 !default;
+
+$a-color-text: #111;
+
+$a-color-link: $a-color-blue;
+$a-color-link--hover: darken($a-color-link, 15%);
+$a-color-link--active: null;
+$a-color-link--visited: null;
+$a-color-link--focus: null;
+
+// ここからプロジェクト固有
+// -----------------------------------------------------------------------------

@@ -1,0 +1,92 @@
+// =============================================================================
+// text
+// =============================================================================
+
+$a-fontFamily-sans-base: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
+  'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$a-fontFamily-sans-hiragino: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN';
+$a-fontFamily-sans-yu: 'Yu Gothic', 'YuGothic';
+$a-fontFamily-sans-noto: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP',
+  'Noto Sans Japanese';
+$a-fontFamily-sans-meiryo: 'Meiryo';
+$a-fontFamily-sans: $a-fontFamily-sans-hiragino, $a-fontFamily-sans-yu,
+  $a-fontFamily-sans-noto, $a-fontFamily-sans-meiryo, $a-fontFamily-sans-base;
+
+$a-fontFamily-serif-base: serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji';
+$a-fontFamily-serif-hiragino: 'Hiragino Mincho ProN';
+$a-fontFamily-serif-yu: 'Yu Mincho', 'YuMincho';
+$a-fontFamily-serif-noto: 'Noto Serif', 'Noto Serif CJK JP', 'Noto Serif JP',
+  'Noto Serif Japanese';
+$a-fontFamily-serif: $a-fontFamily-serif-hiragino, $a-fontFamily-serif-yu,
+  $a-fontFamily-serif-noto, $a-fontFamily-serif-base;
+
+$a-fontFamily-cursive: cursive;
+$a-fontFamily-fantasy: fantasy;
+$a-fontFamily-mono: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas',
+  'Liberation Mono', 'Courier New', monospace;
+
+$a-fontFamily-base: $a-fontFamily-sans;
+
+@mixin a-fontSmoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'palt' 1;
+}
+
+@mixin a-multilineEllipsis($lines: 2) {
+  @supports (-webkit-line-clamp: $lines) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: $lines;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  }
+  @supports not (-webkit-line-clamp: $lines) {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+// Bootstrap ベース
+// https://github.com/twbs/bootstrap/blob/v4.3.1/scss/_variables.scss#L268
+$a-fontSize-base: a-px2rem(16px);
+
+$a-fontSize-xs: $a-fontSize-base * 0.75;
+$a-fontSize-sm: $a-fontSize-base * 0.875;
+$a-fontSize-md: $a-fontSize-base;
+$a-fontSize-lg: $a-fontSize-base * 1.25;
+$a-fontSize-xl: $a-fontSize-base * 1.5;
+
+$a-fontSize-h1: $a-fontSize-base * 2.5;
+$a-fontSize-h2: $a-fontSize-base * 2;
+$a-fontSize-h3: $a-fontSize-base * 1.75;
+$a-fontSize-h4: $a-fontSize-base * 1.5;
+$a-fontSize-h5: $a-fontSize-base * 1.25;
+$a-fontSize-h6: $a-fontSize-base * 1;
+
+$a-fontWeight-100: 100;
+$a-fontWeight-200: 200;
+$a-fontWeight-300: 300;
+$a-fontWeight-400: 400;
+$a-fontWeight-500: 500;
+$a-fontWeight-600: 600;
+$a-fontWeight-700: 700;
+$a-fontWeight-800: 800;
+$a-fontWeight-900: 900;
+
+$a-fontWeight-light: $a-fontWeight-300;
+$a-fontWeight-normal: $a-fontWeight-400;
+$a-fontWeight-bold: $a-fontWeight-700;
+
+$a-lineHeight-xs: 1;
+$a-lineHeight-sm: 1.25;
+$a-lineHeight-md: 1.5;
+$a-lineHeight-lg: 1.75;
+$a-lineHeight-xl: 2;
+
+// ここからプロジェクト固有
+// -----------------------------------------------------------------------------
