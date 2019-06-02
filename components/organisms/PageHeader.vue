@@ -6,8 +6,8 @@ div(:class="$style.root")
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Avatar from '~/components/Avatar.vue'
+import Logo from '~/components/atoms/Logo.vue'
+import Avatar from '~/components/atoms/Avatar.vue'
 import ProfileLinks from '~/components/molecules/ProfileLinks.vue'
 export default {
   components: {

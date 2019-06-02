@@ -10,7 +10,7 @@ div(:class="$style.root")
 </template>
 
 <script>
-import PageHeader from '~/components/PageHeader.vue'
+import PageHeader from '~/components/organisms/PageHeader.vue'
 export default {
   components: {
     PageHeader
