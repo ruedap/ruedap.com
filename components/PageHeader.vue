@@ -2,15 +2,18 @@
 div(:class="$style.root")
   logo
   avatar(:class="$style.avatar")
+  profile-link(name="github" href="https://github.com/ruedap")
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import Avatar from '~/components/Avatar.vue'
+import ProfileLink from '~/components/atoms/ProfileLink.vue'
 export default {
   components: {
     Logo,
-    Avatar
+    Avatar,
+    ProfileLink
   }
 }
 </script>
