@@ -20,7 +20,8 @@
     "cross-env": "^5.2.0",
     "emma.css": "^0.15.0",
     "nuxt": "^2.4.0",
-    "ts-node": "^8.2.0"
+    "ts-node": "^8.2.0",
+    "vue-property-decorator": "^8.1.1"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.0",
