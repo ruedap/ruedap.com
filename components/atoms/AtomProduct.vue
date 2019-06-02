@@ -2,9 +2,12 @@
   article(:class="$style.root")
     h1(:class="$style.name") {{ name }}
     a(:class="$style.imageLink" :href="imageLink")
-      img(:class="$style.image" :src="image" :alt="name")
+      img(:class="$style.image" :src="imagePath()" :alt="name")
     div(:class="$style.body")
       time(:class="$style.time" :dateTime="pubdate") {{ time }}
+      h2(:class="$style.heading")
+        a(:class="$style.headingLink" :href="headingLink") {{ heading}}
+      div(v-html="description")
 </template>
 
 <script>
@@ -34,6 +37,26 @@ export default {
       type: String,
       default: '',
       required: true
+    },
+    headingLink: {
+      type: String,
+      default: '',
+      required: true
+    },
+    heading: {
+      type: String,
+      default: '',
+      required: true
+    },
+    description: {
+      type: String,
+      default: '',
+      required: true
+    }
+  },
+  methods: {
+    imagePath: function() {
+      return require('~/assets/images/products/' + this.image)
     }
   }
 }
