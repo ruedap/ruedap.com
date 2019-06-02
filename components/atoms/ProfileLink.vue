@@ -1,5 +1,5 @@
 <template lang="pug">
-  a(:href="href" :class="$style.icon") {{ name }}
+  a(:href="href" :class="$style.root") {{ name }}
 </template>
 
 <script>
@@ -35,7 +35,18 @@ export default {
   -webkit-font-smoothing: antialiased;
 }
 
-.icon {
+.root {
+  $_c: #b6b6b6;
+  $_c2: #434343;
   @include icon;
+  @include a-linkColors($_c, $_c2);
+  padding: 16px;
+  font-size: 26px;
+  transition-property: color;
+  transition: 0.3s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 </style>

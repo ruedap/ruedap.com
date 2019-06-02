@@ -13,18 +13,6 @@
   $visited: null,
   $focus: null
 ) {
-  @if $normal != null {
-    @if $hover == null {
-      $hover: $normal;
-    }
-    @if $active == null {
-      $active: $normal;
-    }
-    @if $visited == null {
-      $visited: $normal;
-    }
-  }
-
   @if $normal {
     color: $normal;
   }

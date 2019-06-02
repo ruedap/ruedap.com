@@ -1,6 +1,6 @@
 <template lang="pug">
-  div(:class="$style.root")
-    img(:class="$style.image" src="~/assets/images/avatar.png")
+div(:class="$style.root")
+  img(:class="$style.image" src="~/assets/images/avatar.png")
 </template>
 
 <style lang="scss" module>
