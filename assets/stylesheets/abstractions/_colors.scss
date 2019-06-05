@@ -70,7 +70,7 @@ $a-color-danger: $a-color-red !default;
 $a-color-light: $a-color-gray-100 !default;
 $a-color-dark: $a-color-gray-800 !default;
 
-$a-color-text: #111;
+$a-color-text: #333;
 
 $a-color-link: $a-color-blue;
 $a-color-link--hover: darken($a-color-link, 15%);
@@ -80,3 +80,8 @@ $a-color-link--focus: null;
 
 // ここからプロジェクト固有
 // -----------------------------------------------------------------------------
+
+@mixin a-color-link-effect {
+  transition-property: color;
+  transition: 0.2s linear;
+}

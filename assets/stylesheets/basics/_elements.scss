@@ -1,4 +1,15 @@
 body {
-  color: #222;
+  color: $a-color-text;
   background-color: #ececec;
+}
+
+a {
+  color: $a-color-text;
+  text-decoration: underline;
+  text-underline-position: under;
+  @include a-color-link-effect;
+
+  &:hover {
+    color: lighten($a-color-text, 30%);
+  }
 }

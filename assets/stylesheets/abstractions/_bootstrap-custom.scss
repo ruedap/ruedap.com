@@ -6,4 +6,65 @@
 
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
+
+// colors
+$white: $a-color-white;
+$gray-100: $a-color-gray-100;
+$gray-200: $a-color-gray-200;
+$gray-300: $a-color-gray-300;
+$gray-400: $a-color-gray-400;
+$gray-500: $a-color-gray-500;
+$gray-600: $a-color-gray-600;
+$gray-700: $a-color-gray-700;
+$gray-800: $a-color-gray-800;
+$gray-900: $a-color-gray-900;
+$black: $a-color-black;
+
+$blue: $a-color-blue;
+$indigo: $a-color-indigo;
+$purple: $a-color-purple;
+$pink: $a-color-pink;
+$red: $a-color-red;
+$orange: $a-color-orange;
+$yellow: $a-color-yellow;
+$green: $a-color-green;
+$teal: $a-color-teal;
+$cyan: $a-color-cyan;
+
+$primary: $a-color-primary;
+$secondary: $a-color-secondary;
+$success: $a-color-success;
+$info: $a-color-info;
+$warning: $a-color-warning;
+$danger: $a-color-danger;
+$light: $a-color-light;
+$dark: $a-color-dark;
+
+$link-color: $a-color-link;
+$link-hover-color: $a-color-link--hover;
+
+// text
+$font-family-sans-serif: $a-fontFamily-sans;
+$font-family-monospace: $a-fontFamily-mono;
+$font-family-base: $a-fontFamily-base;
+
+$font-size-base: $a-fontSize-base;
+$font-size-lg: $a-fontSize-lg;
+$font-size-sm: $a-fontSize-sm;
+
+$h1-font-size: $a-fontSize-h1;
+$h2-font-size: $a-fontSize-h2;
+$h3-font-size: $a-fontSize-h3;
+$h4-font-size: $a-fontSize-h4;
+$h5-font-size: $a-fontSize-h5;
+$h6-font-size: $a-fontSize-h6;
+
+$font-weight-light: $a-fontWeight-light;
+$font-weight-normal: $a-fontWeight-normal;
+$font-weight-bold: $a-fontWeight-bold;
+
+$line-height-base: $a-lineHeight-md;
+$line-height-lg: $a-lineHeight-lg;
+$line-height-sm: $a-lineHeight-sm;
+
 @import '~bootstrap/scss/mixins';

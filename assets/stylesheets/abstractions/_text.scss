@@ -27,7 +27,8 @@ $a-fontFamily-fantasy: fantasy;
 $a-fontFamily-mono: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas',
   'Liberation Mono', 'Courier New', monospace;
 
-$a-fontFamily-base: $a-fontFamily-sans;
+$a-fontFamily-georgia: Georgia, 'Times New Roman', Times, serif;
+$a-fontFamily-base: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
 
 @mixin a-fontSmoothing {
   -webkit-font-smoothing: antialiased;

@@ -38,12 +38,12 @@ export default {
 .root {
   $_c: #b6b6b6;
   $_c2: #434343;
-  @include icon;
   @include a-linkColors($_c, $_c2);
+  @include a-color-link-effect;
+  @include icon;
   padding: 16px;
   font-size: 26px;
-  transition-property: color;
-  transition: 0.3s linear;
+  text-decoration: none;
 
   &:hover {
     text-decoration: none;
