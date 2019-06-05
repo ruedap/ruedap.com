@@ -1,18 +1,18 @@
 <template lang="pug">
 div(:class="$style.root")
-  logo
-  avatar(:class="$style.avatar")
+  atom-logo
+  atom-avatar(:class="$style.avatar")
   profile-links
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue'
-import Avatar from '~/components/atoms/Avatar.vue'
+import AtomLogo from '~/components/atoms/AtomLogo.vue'
+import AtomAvatar from '~/components/atoms/AtomAvatar.vue'
 import ProfileLinks from '~/components/molecules/ProfileLinks.vue'
 export default {
   components: {
-    Logo,
-    Avatar,
+    AtomLogo,
+    AtomAvatar,
     ProfileLinks
   }
 }
