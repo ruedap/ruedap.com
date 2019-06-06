@@ -1,5 +1,6 @@
 import Fiber from 'fibers'
 import Sass from 'sass'
+import StylelintWebpackPlugin from 'stylelint-webpack-plugin'
 import pkg from './package'
 
 const customSass = {
@@ -93,6 +94,11 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+        config.plugins.push(
+          new StylelintWebpackPlugin({
+            files: '**/*.{scss,vue}'
+          })
+        )
       }
     }
   }
