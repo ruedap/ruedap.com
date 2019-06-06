@@ -13,25 +13,25 @@ export default {
 
 <style lang="scss" module>
 @font-face {
-  font-family: 'dapicons';
+  font-family: dapicons;
+  font-style: normal;
+  font-weight: normal;
   src: url('~assets/fonts/dapicons.eot');
   src: url('~assets/fonts/dapicons.eot?#iefix') format('embedded-opentype'),
     url('~assets/fonts/dapicons.woff') format('woff'),
     url('~assets/fonts/dapicons.ttf') format('truetype'),
     url('~assets/fonts/dapicons.svg#dapicons') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @mixin icon {
-  font-family: 'dapicons', sans-serif;
+  font-family: dapicons, sans-serif;
   speak: none;
   font-feature-settings: 'liga', 'dlig';
   text-rendering: optimizeLegibility;
   font-weight: normal;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
+  text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
 

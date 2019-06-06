@@ -66,11 +66,11 @@ export default {
 
 <style lang="scss" module>
 .root {
-  background-color: #f2f2f2;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset;
-  font-size: 16px;
   max-width: 860px;
   padding: 32px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset;
 }
 
 /* コンテンツ幅より広い画像で表示するモディファイア */
@@ -79,8 +79,8 @@ export default {
 
   @include media-breakpoint-up(lg) {
     .imageLink {
-      margin-left: -12%;
       margin-right: -12%;
+      margin-left: -12%;
     }
   }
 }
@@ -91,8 +91,8 @@ export default {
 
 .imageLink {
   display: block;
-  margin-bottom: 32px;
   max-width: 1000px;
+  margin-bottom: 32px;
 }
 
 @mixin imageShadow {
@@ -101,14 +101,14 @@ export default {
 
   &::before,
   &::after {
-    content: '';
     position: absolute;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     top: 50%;
+    right: 10px;
     bottom: 0;
     left: 10px;
-    right: 10px;
+    content: '';
     border-radius: 100px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -124,9 +124,9 @@ export default {
 
 .time {
   display: block;
-  font-size: 20px;
-  font-family: $a-fontFamily-georgia;
   margin-bottom: 20px;
+  font-family: $a-fontFamily-georgia;
+  font-size: 20px;
 }
 
 .heading {
@@ -144,8 +144,8 @@ export default {
 }
 
 .description {
-  text-align: left;
   line-height: 1.8;
+  text-align: left;
 }
 
 .more {

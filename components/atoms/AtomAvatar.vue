@@ -6,12 +6,13 @@ div(:class="$style.root")
 <style lang="scss" module>
 .root {
   --width: 120px;
+
   display: block;
-  padding: 10px;
-  border-radius: 999px;
-  height: var(--width);
   width: var(--width);
+  height: var(--width);
+  padding: 10px;
   background-color: #e4e4e4;
+  border-radius: 999px;
 }
 
 .image {

@@ -16,8 +16,8 @@ export default {
 
 <style lang="scss" module>
 .root {
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 </style>

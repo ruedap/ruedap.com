@@ -32,8 +32,8 @@ export default {
   flex-direction: column;
   align-items: center;
   background-image: url('~assets/images/bg-lines.png');
-  background-position: center top;
   background-repeat: repeat-y;
+  background-position: center top;
 }
 
 .header {
