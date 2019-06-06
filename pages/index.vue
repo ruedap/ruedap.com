@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- <div :class="$style.container">
+    <!-- <div :class="$style.blog">
       <section-blog-svg />
     </div> -->
-    <div :class="$style.container">
+    <div :class="$style.products">
       <section-products-svg />
       <atom-product
         v-for="item in json.products"
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" module>
-.container {
+.products {
   display: flex;
   flex-direction: column;
   align-items: center;

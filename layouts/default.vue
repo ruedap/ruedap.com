@@ -20,6 +20,9 @@ export default {
 
 <style lang="scss" module>
 .root {
+  scroll-snap-type: y proximity;
+  max-height: 100vh;
+  overflow-y: scroll;
   background-image: url('~assets/images/bg-pattern.png');
   background-repeat: repeat;
 }
@@ -34,6 +37,7 @@ export default {
 }
 
 .header {
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   min-height: 100vh;
