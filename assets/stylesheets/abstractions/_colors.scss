@@ -82,6 +82,6 @@ $a-color-link--focus: null;
 // -----------------------------------------------------------------------------
 
 @mixin a-color-link-effect {
-  transition-property: color;
   transition: 0.2s linear;
+  transition-property: color;
 }

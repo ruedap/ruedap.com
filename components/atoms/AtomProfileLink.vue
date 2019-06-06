@@ -24,7 +24,7 @@ export default {
 }
 
 @mixin icon {
-  font-family: 'dapicons';
+  font-family: 'dapicons', sans-serif;
   speak: none;
   font-feature-settings: 'liga', 'dlig';
   text-rendering: optimizeLegibility;

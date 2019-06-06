@@ -75,7 +75,7 @@ export default {
 
 /* コンテンツ幅より広い画像で表示するモディファイア */
 .root_wideImage {
-  composes: root;
+  @extend .root;
 
   @include media-breakpoint-up(lg) {
     .imageLink {
