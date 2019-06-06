@@ -28,6 +28,7 @@
     "@nuxt/typescript": "^2.8.0",
     "@nuxtjs/eslint-config": "^0.0.1",
     "@nuxtjs/style-resources": "^0.1.2",
+    "@ruedap/stylelint-config-abccss": "^0.7.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^4.1.0",
