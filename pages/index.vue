@@ -26,16 +26,15 @@
 import AtomProduct from '~/components/atoms/AtomProduct.vue'
 // import SectionBlogSvg from '~/assets/images/section-blog.svg'
 import SectionProductsSvg from '~/assets/images/section-products.svg'
-import json from '~/assets/data.json'
 export default {
   components: {
     AtomProduct,
     // SectionBlogSvg,
     SectionProductsSvg
   },
-  data() {
+  asyncData({ store }) {
     return {
-      json: json
+      json: store.getters['json/getAll']
     }
   }
 }
