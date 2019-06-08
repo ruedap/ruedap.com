@@ -82,6 +82,13 @@ export default {
     },
     extractCSS: true,
     publicPath: '/assets/',
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          autoprefixer: { grid: true }
+        }
+      }
+    },
     /*
      ** You can extend webpack config here
      */
