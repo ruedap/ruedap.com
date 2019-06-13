@@ -78,7 +78,10 @@ export default {
    */
   build: {
     loaders: {
-      scss: customSass
+      scss: customSass,
+      cssModules: {
+        localIdentName: '[name]-[local]-[hash:base64:5]'
+      }
     },
     extractCSS: true,
     publicPath: '/assets/',
