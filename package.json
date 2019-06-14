@@ -14,7 +14,8 @@
     "precommit": "npm run lint",
     "analyze": "nuxt build --analyze",
     "deploy": "nuxt generate && firebase deploy",
-    "browserslist": "browserslist"
+    "browserslist": "browserslist",
+    "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt"
   },
   "browserslist": [
     "last 2 version",
