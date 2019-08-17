@@ -60,6 +60,12 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-39361234-2'
+      }
+    ],
     'nuxt-svg-loader'
   ],
   styleResources: {
