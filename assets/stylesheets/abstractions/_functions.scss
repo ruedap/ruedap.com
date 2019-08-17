@@ -1,0 +1,46 @@
+// =============================================================================
+// functions
+// =============================================================================
+
+@function a-stripUnit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function a-rem2px($rem) {
+  $_browser-context: 1.6;
+  $_px: (a-stripUnit($rem) * $_browser-context) * 10 * 1px;
+  @return round($_px);
+}
+
+@function a-px2rem($px) {
+  $_browser-context: 1.6;
+  $_rem: (a-stripUnit($px) / $_browser-context) / 10 * 1rem;
+  @return $_rem;
+}
+
+@function a-dec2hex($d) {
+  $hexVals: 'A' 'B' 'C' 'D' 'E' 'F';
+  $base: 16;
+  $quotient: $d;
+  $result: '';
+  @if $d == 0 {
+    $result: '00';
+  }
+  @while $quotient != 0 {
+    $mod: $quotient % $base;
+    $quotient: floor($quotient / $base);
+    @if $mod > 9 {
+      $mod: nth($hexVals, $mod - 9);
+    }
+    @if $d < $base {
+      $result: '0' + $mod;
+    } @else {
+      $result: $mod + $result;
+    }
+  }
+  @return $result;
+}
+
+@function a-backslash($character) {
+  @return unquote('"') + unquote(str-insert($character, '\\', 1)) + unquote('"');
+}

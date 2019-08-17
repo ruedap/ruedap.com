@@ -1,0 +1,172 @@
+// =============================================================================
+// emma-custom
+// =============================================================================
+
+// Emma.css 0.15.0
+// https://github.com/ruedap/emma.css/blob/v0.15.0/scss/all.scss
+
+// display
+// @import "~emma.css/scss/rules/position";
+// @import "~emma.css/scss/rules/top";
+// @import "~emma.css/scss/rules/right";
+// @import "~emma.css/scss/rules/bottom";
+// @import "~emma.css/scss/rules/left";
+// @import "~emma.css/scss/rules/z-index";
+// @import "~emma.css/scss/rules/box-sizing";
+@import '~emma.css/scss/rules/display';
+@import '~emma.css/scss/rules/flex';
+// @import "~emma.css/scss/rules/flex-basis";
+@import '~emma.css/scss/rules/flex-direction';
+@import '~emma.css/scss/rules/flex-wrap';
+// @import "~emma.css/scss/rules/flex-shrink";
+// @import "~emma.css/scss/rules/flex-grow";
+// @import "~emma.css/scss/rules/align-content";
+@import '~emma.css/scss/rules/align-items';
+@import '~emma.css/scss/rules/align-self';
+@import '~emma.css/scss/rules/justify-content';
+// @import "~emma.css/scss/rules/order";
+// @import "~emma.css/scss/rules/overflow";
+// @import "~emma.css/scss/rules/overflow-x";
+// @import "~emma.css/scss/rules/overflow-y";
+// @import "~emma.css/scss/rules/visibility";
+// @import "~emma.css/scss/rules/table-layout";
+// @import "~emma.css/scss/rules/center-x-center-y";
+
+// float
+// @import "~emma.css/scss/rules/float";
+// @import "~emma.css/scss/rules/clear";
+// @import "~emma.css/scss/rules/clearfix";
+
+// width
+@import '~emma.css/scss/rules/width';
+// @import "~emma.css/scss/rules/min-width";
+// @import "~emma.css/scss/rules/max-width";
+
+// height
+// @import "~emma.css/scss/rules/height";
+// @import "~emma.css/scss/rules/min-height";
+// @import "~emma.css/scss/rules/max-height";
+
+// padding
+@import '~emma.css/scss/rules/padding';
+@import '~emma.css/scss/rules/padding-top';
+@import '~emma.css/scss/rules/padding-right';
+@import '~emma.css/scss/rules/padding-bottom';
+@import '~emma.css/scss/rules/padding-left';
+@import '~emma.css/scss/rules/padding-x0';
+@import '~emma.css/scss/rules/padding-y0';
+@import '~emma.css/scss/rules/padding-x-xs';
+@import '~emma.css/scss/rules/padding-y-xs';
+@import '~emma.css/scss/rules/padding-x-sm';
+@import '~emma.css/scss/rules/padding-y-sm';
+@import '~emma.css/scss/rules/padding-x-md';
+@import '~emma.css/scss/rules/padding-y-md';
+@import '~emma.css/scss/rules/padding-x-lg';
+@import '~emma.css/scss/rules/padding-y-lg';
+@import '~emma.css/scss/rules/padding-x-xl';
+@import '~emma.css/scss/rules/padding-y-xl';
+
+// margin
+@import '~emma.css/scss/rules/margin';
+@import '~emma.css/scss/rules/margin-top';
+@import '~emma.css/scss/rules/margin-right';
+@import '~emma.css/scss/rules/margin-bottom';
+@import '~emma.css/scss/rules/margin-left';
+@import '~emma.css/scss/rules/margin-x0';
+@import '~emma.css/scss/rules/margin-y0';
+@import '~emma.css/scss/rules/margin-x-auto';
+@import '~emma.css/scss/rules/margin-y-auto';
+@import '~emma.css/scss/rules/margin-x-xs';
+@import '~emma.css/scss/rules/margin-y-xs';
+@import '~emma.css/scss/rules/margin-x-sm';
+@import '~emma.css/scss/rules/margin-y-sm';
+@import '~emma.css/scss/rules/margin-x-md';
+@import '~emma.css/scss/rules/margin-y-md';
+@import '~emma.css/scss/rules/margin-x-lg';
+@import '~emma.css/scss/rules/margin-y-lg';
+@import '~emma.css/scss/rules/margin-x-xl';
+@import '~emma.css/scss/rules/margin-y-xl';
+
+// text
+@import '~emma.css/scss/rules/font-family';
+@import '~emma.css/scss/rules/font-size';
+// @import "~emma.css/scss/rules/font-style";
+@import '~emma.css/scss/rules/font-weight';
+// @import "~emma.css/scss/rules/font-variant";
+// @import "~emma.css/scss/rules/webkit-font-smoothing";
+// @import "~emma.css/scss/rules/moz-osx-font-smoothing";
+// @import "~emma.css/scss/rules/line-height";
+@import '~emma.css/scss/rules/color';
+@import '~emma.css/scss/rules/text-align';
+// @import "~emma.css/scss/rules/text-emphasis";
+@import '~emma.css/scss/rules/text-decoration';
+// @import "~emma.css/scss/rules/text-indent";
+// @import "~emma.css/scss/rules/text-overflow";
+// @import "~emma.css/scss/rules/text-shadow";
+// @import "~emma.css/scss/rules/text-transform";
+// @import "~emma.css/scss/rules/letter-spacing";
+// @import "~emma.css/scss/rules/word-break";
+// @import "~emma.css/scss/rules/word-wrap";
+@import '~emma.css/scss/rules/white-space';
+// @import "~emma.css/scss/rules/vertical-align";
+// @import "~emma.css/scss/rules/list-style";
+// @import "~emma.css/scss/rules/list-style-position";
+// @import "~emma.css/scss/rules/list-style-type";
+// @import "~emma.css/scss/rules/list-style-image";
+// @import "~emma.css/scss/rules/opacity";
+// @import "~emma.css/scss/rules/text-truncation";
+// @import "~emma.css/scss/rules/text-hiding";
+@import '~emma.css/scss/rules/reset-list';
+// @import "~emma.css/scss/rules/default-ol";
+// @import "~emma.css/scss/rules/default-ul";
+// @import "~emma.css/scss/rules/font-smoothing-antialiased";
+
+// other
+// @import "~emma.css/scss/rules/cursor";
+// @import "~emma.css/scss/rules/resize";
+// @import "~emma.css/scss/rules/user-select";
+// @import "~emma.css/scss/rules/transition-delay";
+// @import "~emma.css/scss/rules/transition-timing-function";
+// @import "~emma.css/scss/rules/transition-duration";
+// @import "~emma.css/scss/rules/transition-property";
+// @import "~emma.css/scss/rules/transform";
+// @import "~emma.css/scss/rules/appearance";
+// @import "~emma.css/scss/rules/backface-visibility";
+// @import "~emma.css/scss/rules/object-fit";
+// @import "~emma.css/scss/rules/webkit-touch-callout";
+// @import "~emma.css/scss/rules/webkit-overflow-scrolling";
+
+// border
+// @import "~emma.css/scss/rules/border-collapse";
+// @import "~emma.css/scss/rules/border";
+// @import "~emma.css/scss/rules/border-color";
+// @import "~emma.css/scss/rules/border-style";
+// @import "~emma.css/scss/rules/border-width";
+// @import "~emma.css/scss/rules/border-top";
+// @import "~emma.css/scss/rules/border-top-color";
+// @import "~emma.css/scss/rules/border-top-width";
+// @import "~emma.css/scss/rules/border-right";
+// @import "~emma.css/scss/rules/border-right-color";
+// @import "~emma.css/scss/rules/border-right-width";
+// @import "~emma.css/scss/rules/border-bottom";
+// @import "~emma.css/scss/rules/border-bottom-color";
+// @import "~emma.css/scss/rules/border-bottom-width";
+// @import "~emma.css/scss/rules/border-left";
+// @import "~emma.css/scss/rules/border-left-color";
+// @import "~emma.css/scss/rules/border-left-width";
+// @import "~emma.css/scss/rules/border-radius";
+// @import "~emma.css/scss/rules/border-image";
+// @import "~emma.css/scss/rules/outline";
+// @import "~emma.css/scss/rules/outline-width";
+// @import "~emma.css/scss/rules/outline-style";
+// @import "~emma.css/scss/rules/outline-color";
+
+// background
+// @import "~emma.css/scss/rules/background";
+@import '~emma.css/scss/rules/background-color';
+// @import "~emma.css/scss/rules/background-image";
+// @import "~emma.css/scss/rules/background-repeat";
+// @import "~emma.css/scss/rules/background-attachment";
+// @import "~emma.css/scss/rules/background-position";
+// @import "~emma.css/scss/rules/background-size";
+// @import "~emma.css/scss/rules/box-shadow";
