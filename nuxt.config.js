@@ -31,6 +31,11 @@ export default {
     ],
     link: [
       { rel: 'icon', href: '/favicon.ico' },
+      { rel: "apple-touch-icon", href: "/icons/48.png" },
+      { rel: "apple-touch-icon", href: "/icons/72.png", sizes: "72x72" },
+      { rel: "apple-touch-icon", href: "/icons/96.png", sizes: "96x96" },
+      { rel: "apple-touch-icon", href: "/icons/144.png", sizes: "144x144" },
+      { rel: "apple-touch-icon", href: "/icons/192.png", sizes: "192x192" },
       {
         rel: 'stylesheet',
         href: '//fonts.googleapis.com/css?family=PT+Serif:400&subset=latin'
