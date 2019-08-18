@@ -31,6 +31,7 @@ export default {
     ],
     link: [
       { rel: 'icon', href: '/favicon.ico' },
+      { rel: "manifest", href: "/manifest.json" },
       { rel: "apple-touch-icon", href: "/icons/48.png" },
       { rel: "apple-touch-icon", href: "/icons/72.png", sizes: "72x72" },
       { rel: "apple-touch-icon", href: "/icons/96.png", sizes: "96x96" },
