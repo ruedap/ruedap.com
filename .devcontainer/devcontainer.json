@@ -1,0 +1,6 @@
+{
+  "name": "ruedap.com",
+  "context": "..",
+  "dockerFile": "./Dockerfile",
+  "forwardPorts": [3666],
+}
