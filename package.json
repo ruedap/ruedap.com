@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ruedap/ruedap.com/issues"
   },
-  "homepage": "https://github.com/ruedap/ruedap.com#readme"
+  "homepage": "https://github.com/ruedap/ruedap.com#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
