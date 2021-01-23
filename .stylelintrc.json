@@ -1,7 +1,0 @@
-{
-  "extends": "@ruedap/stylelint-config-abccss",
-  "plugins": ["stylelint-scss"],
-  "rules": {
-    "string-quotes": "single"
-  }
-}
