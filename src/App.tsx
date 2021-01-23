@@ -8,9 +8,9 @@ const Foo = styled.div`color: red;`
 function App() {
   return (
     <div className="App">
-      <Foo>yay</Foo>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Foo>yay</Foo>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

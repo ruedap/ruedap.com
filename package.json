@@ -100,7 +100,8 @@
   "babel": {
     "presets": [
       "react-app"
-    ]
+    ],
+    "plugins": ["@compiled/react/babel-plugin"]
   },
   "jest": {
     "roots": [
