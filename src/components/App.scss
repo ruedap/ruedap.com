@@ -1,0 +1,64 @@
+.app {
+  display: flex;
+  flex-direction: row;
+
+  .board-row {
+    .square {
+      background: #fff;
+      border: 1px solid #999;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 34px;
+      height: 34px;
+      margin-right: -1px;
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 34px;
+
+      &.caused-win {
+        background: #fff799;
+        &:focus {
+          outline: none;
+          background: #fff799;
+        }
+      }
+
+      &:focus {
+        outline: none;
+        background: #ddd;
+      }
+    }
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .game-info {
+    margin-left: 20px;
+
+    ol {
+      padding-left: 30px;
+
+      li {
+        button {
+          &.normal {
+            font-weight: normal;
+          }
+
+          &.bold {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .status {
+      margin-bottom: 10px;
+    }
+  }
+}
