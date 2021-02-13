@@ -1,6 +1,5 @@
-import React from 'react';
 import { styled } from '@compiled/react';
-import { mq } from '../../styles';
+import { mq, fonts } from '../../styles';
 
 type Props = {
   className?: string,
@@ -93,7 +92,7 @@ const Body = styled.div`
 const Time = styled.time`
   display: block;
   margin-bottom: 20px;
-  /* font-family: $a-fontFamily-georgia; */
+  font-family: ${fonts.georgia};
   font-size: 20px;
 `
 
