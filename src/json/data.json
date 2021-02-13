@@ -75,7 +75,7 @@
       "pubdate": "2011-02-28",
       "heading": "Instagram APIを使ってねこ大好き専用の「Nekostagram」を作ってみた",
       "headingLink": "http://blog.ruedap.com/entry/20110228/instagram_api_of_exclusive_use_for_cat_lovers_nekostagram",
-      "description": "<div><p>（ドヤッ）ってな感じのWebアプリ名を付けちゃったけど、そんな大層なものではなく、ページを読み込むたびにInstagramのAPIでネコ写真をちょっとずつ取ってきて、そのネコ写真と撮影者のコメントを一覧表示してるだけのペライチなサイトでございます。</p><p>マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。</p></div>"
+      "description": "<div><p>ドヤッってな感じのWebアプリ名を付けちゃったけど、そんな大層なものではなく、ページを読み込むたびにInstagramのAPIでネコ写真をちょっとずつ取ってきて、そのネコ写真と撮影者のコメントを一覧表示してるだけのペライチなサイトでございます。</p><p>マッタリとかわいいネコたちを見ながら、鼻歌交じりで次へボタンをクリックする感じのネコビューアー。</p></div>"
     }
   ],
   "profile_links": [
