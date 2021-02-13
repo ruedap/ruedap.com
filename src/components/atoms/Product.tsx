@@ -1,5 +1,5 @@
 import { styled } from '@compiled/react';
-import { mq, fonts } from '../../styles';
+import { mq, fonts, fontWeights } from '../../styles';
 
 type Props = {
   className?: string,
@@ -98,7 +98,7 @@ const Time = styled.time`
 
 const Heading = styled.h2`
   font-size: 23px;
-  /* font-weight: $a-fontWeight-normal; */
+  font-weight: ${fontWeights.normal};
 `
 
 const HeadingLink = styled.a`
