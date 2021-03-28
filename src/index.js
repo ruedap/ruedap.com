@@ -1,4 +1,7 @@
 import { render } from 'react-dom';
+import './manifest.json';
+import './assets/favicon.ico';
+import './assets/icon512.png';
 import './styles/extras.css';
 import { App } from './components/App';
 

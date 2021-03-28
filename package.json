@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --hot",
-    "build": "webpack"
+    "build": "rm -rf ./dist/ && webpack"
   },
   "dependencies": {
     "@babel/preset-env": "^7.13.12",
