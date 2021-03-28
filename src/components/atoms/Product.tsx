@@ -101,8 +101,14 @@ const Heading = styled.h2`
   font-weight: ${fontWeights.normal};
 `
 
+// TODO mixins.linkEffect
+const linkEffect = `
+  transition: 0.2s linear;
+  transition-property: color;
+`
+
 const HeadingLink = styled.a`
-  /* @include a-color-link-effect; */
+  ${linkEffect}
   text-decoration: none;
 
   &:hover {
@@ -121,5 +127,5 @@ const More = styled.nav`
 `
 
 const MoreLink = styled.a`
-  /* @include a-color-link-effect; */
+  ${linkEffect}
 `
