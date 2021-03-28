@@ -24,6 +24,7 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
