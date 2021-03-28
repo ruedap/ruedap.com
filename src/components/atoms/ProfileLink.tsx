@@ -14,19 +14,6 @@ export const ProfileLink: React.VFC<Props> = (props) => {
   )
 }
 
-const _fontFace = `
-  @font-face {
-    font-family: dapicons;
-    font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/dapicons.eot');
-    src: url('/fonts/dapicons.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/dapicons.woff') format('woff'),
-      url('/fonts/dapicons.ttf') format('truetype'),
-      url('/fonts/dapicons.svg#dapicons') format('svg');
-  }
-`
-
 // TODO mixins.linkEffect
 const linkEffect = `
   transition: 0.2s linear;
@@ -46,7 +33,6 @@ const _icon =`
 `
 
 const Root = styled.a`
-  ${_fontFace}
   ${linkEffect}
   ${_icon}
   color: #b6b6b6;

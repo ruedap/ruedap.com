@@ -5,10 +5,9 @@ import { PageHeader } from './molecules/PageHeader'
 import { PageLayout } from './templates/PageLayout'
 import { Blog } from './molecules/Blog'
 import SectionProductsSVG from './section-products.svg'
-import json from '../json/data.json'
-import '../styles/basics.scss'
+import json from '../assets/json/data.json'
 
-function App() {
+export const App = () => {
   return (
     <PageLayout header={ <PageHeader /> } blog={ <Blog /> }>
       <Products>
@@ -43,5 +42,3 @@ const ProductStyled = styled(Product)`
   margin-top: 50px;
   margin-bottom: 200px;
 `
-
-export default App;
