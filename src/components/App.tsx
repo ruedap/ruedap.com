@@ -3,6 +3,7 @@ import { styled } from '@compiled/react';
 import { Product } from './atoms/Product'
 import { PageHeader } from './molecules/PageHeader'
 import { PageLayout } from './templates/PageLayout'
+import SectionProductsSVG from './section-products.svg'
 import json from '../json/data.json'
 import '../styles/basics.scss'
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <PageLayout header={ <PageHeader /> }>
       <Products>
+        <SectionProductsSVG />
         { json.products.map(product => {
           return (
             <ProductStyled
