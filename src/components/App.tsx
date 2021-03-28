@@ -12,9 +12,8 @@ function App() {
       <Products>
         { json.products.map(product => {
           return (
-            <Product
+            <ProductStyled
               key={product.id}
-              className="c-Products-product"
               name={ product.name }
               imageLink={ product.imageLink}
               image={product.image}
@@ -35,21 +34,11 @@ const Products = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+const ProductStyled = styled(Product)`
+  margin-top: 50px;
   margin-bottom: 200px;
-
-  .c-Products {
-    &-product {
-      margin-bottom: 200px;
-
-      &:first-of-type {
-        margin-top: 50px;
-      }
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  }
 `
 
 export default App;

@@ -1,5 +1,5 @@
 import { styled } from '@compiled/react';
-import { mq, fonts, fontWeights } from '../../styles';
+import { fonts, fontWeights } from '../../styles';
 
 type Props = {
   className?: string,
@@ -18,7 +18,7 @@ const imagePath = (fileName: string) =>
 
 export const Product = (props: Props) => {
   return (
-    <Root>
+    <Root className={ props.className }>
       <Name>{props.name}</Name>
       <ImageLink href={props.imageLink}>
         <Image src={imagePath(props.image)} alt={props.name} />
@@ -43,23 +43,24 @@ const Root = styled.article`
   font-size: 16px;
   background-color: #f2f2f2;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset;
-
-  ${mq.up.lg} {
-    .imageLink {
-      margin-right: -12%;
-      margin-left: -12%;
-    }
-  }
 `
 
 const Name = styled.h1`
   display: none;
 `
 
+// TODO: mq
+const _mq = `@media (min-width: 1000px)`
+
 const ImageLink = styled.a`
   display: block;
   max-width: 1000px;
   margin-bottom: 32px;
+
+  ${_mq} {
+    margin-right: -12%;
+    margin-left: -12%;
+  }
 `
 
 const imageShadow = `
