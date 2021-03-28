@@ -3,7 +3,7 @@ import { styled } from '@compiled/react';
 // import { Product } from '../../src_/components/atoms/Product'
 // import { PageHeader } from '../../src_/components/molecules/PageHeader'
 // import { PageLayout } from '../../src_/components/templates/PageLayout'
-// import { Blog } from '../../src_/components/molecules/Blog'
+import { Blog } from './molecules/Blog'
 // import SectionProductsSVG from './section-products.svg'
 // import json from '../../src_/json/data.json'
 // import '../styles/basics.scss'
@@ -32,7 +32,11 @@ export const App = () => {
   //   </PageLayout>
   // );
 
-  return <div>yay</div>
+  return (
+    <div>
+      <Blog />
+    </div>
+  )
 }
 
 // const Products = styled.div`

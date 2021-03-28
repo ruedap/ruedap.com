@@ -38,6 +38,10 @@ module.exports = {
         test: /\.css$/i,
         use: [extractCSS ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
       },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
     ].filter(Boolean),
   },
   plugins: [
