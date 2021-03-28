@@ -1,14 +1,13 @@
---colors-text: #333;
---colors-hover: #666;
+:root {
+  --colors-text: #333;
+  --colors-hover: #666;
+}
 
 html {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: inherit;
-}
-
+*,
 *::before,
 *::after {
   box-sizing: inherit;
