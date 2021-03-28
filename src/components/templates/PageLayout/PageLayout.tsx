@@ -21,15 +21,6 @@ const Root = styled.div`
   max-height: 100vh;
   background-image: url('/images/bg-pattern.png');
   background-repeat: repeat;
-
-  * {
-    box-sizing: border-box;
-
-    &::before,
-    &::after {
-      box-sizing: inherit;
-    }
-  }
 `
 
 const Inner = styled.div`
