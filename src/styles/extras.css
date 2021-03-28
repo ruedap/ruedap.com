@@ -12,27 +12,24 @@ html {
   box-sizing: inherit;
 }
 
-$_colorText: #333;
-
-@mixin _linkEffect {
-  transition: 0.2s linear;
-  transition-property: color;
-}
+--colors-text: #333;
+--colors-hover: #666;
 
 body {
-  color: $_colorText;
+  color: var(--colors-text);
   background-color: #ececec;
   font-family: 'Noto Sans JP', 'PT Serif', georgia, 'Times New Roman', times, serif;
   font-weight: 500;
 }
 
 a {
-  color: $_colorText;
+  color: var(--colors-text);
   text-decoration: underline;
   text-underline-position: under;
-  @include _linkEffect;
+  transition: 0.2s linear;
+  transition-property: color;
+}
 
-  &:hover {
-    color: lighten($_colorText, 0.3);
-  }
+a:hover {
+  color: var(--colors-hover);
 }

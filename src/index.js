@@ -1,5 +1,5 @@
 import { render } from 'react-dom';
-import './extra.css';
+import './styles/extras.css';
 import { App } from './components/App';
 
 function createRoot() {
