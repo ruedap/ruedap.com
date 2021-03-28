@@ -1,5 +1,14 @@
 import { styled } from '@compiled/react';
-import { fonts, fontWeights } from '../../styles';
+import { fonts, fontWeights } from '../../../styles';
+
+// TODO: fix this
+import './images/alfred2-font-awesome-workflow.png'
+import './images/daplog.png'
+import './images/hatenastar.png'
+import './images/inustagram.png'
+import './images/nekostagram.png'
+import './images/sassience.png'
+import './images/uhloop.png'
 
 type Props = {
   className?: string,
@@ -14,7 +23,7 @@ type Props = {
 }
 
 const imagePath = (fileName: string) =>
-  `/images/products/${fileName}`
+  `./images/${fileName}`
 
 export const Product = (props: Props) => {
   return (

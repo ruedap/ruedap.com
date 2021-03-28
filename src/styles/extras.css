@@ -1,3 +1,5 @@
+--colors-text: #333;
+--colors-hover: #666;
 
 html {
   box-sizing: border-box;
@@ -16,18 +18,16 @@ html {
   font-family: dapicons;
   font-style: normal;
   font-weight: normal;
-  src:
-    url('../fonts/dapicons.woff') format('woff'),
-    url('../fonts/dapicons.ttf') format('truetype');
+  src: url("../assets/fonts/dapicons.woff") format("woff"),
+    url("../assets/fonts/dapicons.ttf") format("truetype");
 }
 
---colors-text: #333;
---colors-hover: #666;
-
 body {
+  margin: 0;
   color: var(--colors-text);
   background-color: #ececec;
-  font-family: 'Noto Sans JP', 'PT Serif', georgia, 'Times New Roman', times, serif;
+  font-family: "Noto Sans JP", "PT Serif", georgia, "Times New Roman", times,
+    serif;
   font-weight: 500;
 }
 

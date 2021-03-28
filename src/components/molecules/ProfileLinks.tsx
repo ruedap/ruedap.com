@@ -1,6 +1,6 @@
 import { styled } from '@compiled/react';
 import { ProfileLink } from '../atoms/ProfileLink'
-import json from '../../json/data.json'
+import json from '../../assets/json/data.json'
 
 export const ProfileLinks = () => {
   return (
