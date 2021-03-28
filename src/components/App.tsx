@@ -8,6 +8,9 @@ import { Blog } from './molecules/Blog'
 // import json from '../../src_/json/data.json'
 // import '../styles/basics.scss'
 
+
+import { Avatar } from './atoms/Avatar'
+
 export const App = () => {
   // return (
   //   <PageLayout header={ <PageHeader /> } blog={ <Blog /> }>
@@ -35,6 +38,7 @@ export const App = () => {
   return (
     <div>
       <Blog />
+      <Avatar />
     </div>
   )
 }

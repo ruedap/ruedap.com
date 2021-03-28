@@ -14,12 +14,21 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    assetModuleFilename: "images/[name][ext]",
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.json', '.js'],
   },
   module: {
     rules: [
+      {
+        test: /\.(ico|jpe?g|png|webp)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
       {
         test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
@@ -37,10 +46,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [extractCSS ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
-      },
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
       },
     ].filter(Boolean),
   },
