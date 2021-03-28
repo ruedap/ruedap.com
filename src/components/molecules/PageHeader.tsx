@@ -1,11 +1,12 @@
 import { styled } from '@compiled/react';
 import { Logo } from '../atoms/Logo'
+import { Avatar } from '../atoms/Avatar'
 
 export const PageHeader = () => {
   return (
     <Root>
       <Logo />
-      <div>avatar</div>
+      <Avatar />
       <div>profile-links</div>
     </Root>
   )
