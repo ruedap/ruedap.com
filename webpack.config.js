@@ -22,14 +22,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ico|jpe?g|png|webp)$/,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-      {
         test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
         use: [
@@ -46,6 +38,14 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [extractCSS ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(ico|jpe?g|png|webp|woff|ttf)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
       },
     ].filter(Boolean),
   },

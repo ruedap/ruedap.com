@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@compiled/react';
 // import { Product } from '../../src_/components/atoms/Product'
-// import { PageHeader } from '../../src_/components/molecules/PageHeader'
+import { PageHeader } from './molecules/PageHeader'
 // import { PageLayout } from '../../src_/components/templates/PageLayout'
 import { Blog } from './molecules/Blog'
 // import SectionProductsSVG from './section-products.svg'
@@ -39,6 +39,7 @@ export const App = () => {
     <div>
       <Blog />
       <Avatar />
+      <PageHeader />
     </div>
   )
 }

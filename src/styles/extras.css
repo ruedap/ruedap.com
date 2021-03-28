@@ -12,6 +12,15 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: dapicons;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../fonts/dapicons.woff') format('woff'),
+    url('../fonts/dapicons.ttf') format('truetype');
+}
+
 --colors-text: #333;
 --colors-hover: #666;
 
