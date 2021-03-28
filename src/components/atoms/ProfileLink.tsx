@@ -3,11 +3,12 @@ import { styled } from '@compiled/react';
 
 interface Props {
   ligatureName: 'twitter' | 'github' | 'mail'
+  href: string
 }
 
 export const ProfileLink: React.VFC<Props> = (props) => {
   return (
-    <Root>
+    <Root href={ props.href }>
       { props.ligatureName }
     </Root>
   )

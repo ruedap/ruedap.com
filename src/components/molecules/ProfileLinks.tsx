@@ -4,9 +4,9 @@ import { ProfileLink } from '../atoms/ProfileLink'
 export const ProfileLinks = () => {
   return (
     <Root>
-      <ProfileLink ligatureName="twitter" />
-      <ProfileLink ligatureName="github" />
-      <ProfileLink ligatureName="mail" />
+      <ProfileLink ligatureName="twitter" href="https://twitter.com/ruedap" />
+      <ProfileLink ligatureName="github" href="https://github.com/ruedap" />
+      <ProfileLink ligatureName="mail" href="mailto:ruedap@ruedap.com" />
     </Root>
   )
 }
