@@ -3,6 +3,7 @@ import { styled } from '@compiled/react';
 
 interface Props {
   header: React.ReactNode,
+  blog: React.ReactNode,
 }
 
 export const PageLayout: React.FC<Props> = (props) => {
@@ -10,6 +11,7 @@ export const PageLayout: React.FC<Props> = (props) => {
     <Root>
       <Inner>
         <Header>{props.header}</Header>
+        <div>{props.blog}</div>
         <div>{props.children}</div>
         <Header>{props.header}</Header>
       </Inner>
