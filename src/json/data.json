@@ -70,13 +70,13 @@
   "profile_links": [
     {
       "id": 1,
-      "name": "twitter",
-      "href": "https://twitter.com/ruedap"
+      "name": "github",
+      "href": "https://github.com/ruedap"
     },
     {
       "id": 2,
-      "name": "github",
-      "href": "https://github.com/ruedap"
+      "name": "twitter",
+      "href": "https://twitter.com/ruedap"
     },
     {
       "id": 3,

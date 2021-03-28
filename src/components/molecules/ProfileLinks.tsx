@@ -1,12 +1,21 @@
 import { styled } from '@compiled/react';
 import { ProfileLink } from '../atoms/ProfileLink'
+import json from '../../json/data.json'
 
 export const ProfileLinks = () => {
   return (
     <Root>
-      <ProfileLink ligatureName="twitter" href="https://twitter.com/ruedap" />
-      <ProfileLink ligatureName="github" href="https://github.com/ruedap" />
-      <ProfileLink ligatureName="mail" href="mailto:ruedap@ruedap.com" />
+      {
+        json.profile_links.map(link => {
+          return (
+            <ProfileLink
+              key={ link.id }
+              ligatureName={ link.name }
+              href={ link.href }
+            />
+          )
+        })
+      }
     </Root>
   )
 }

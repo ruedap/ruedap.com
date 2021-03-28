@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@compiled/react';
 
 interface Props {
-  ligatureName: 'twitter' | 'github' | 'mail'
+  ligatureName: string
   href: string
 }
 
