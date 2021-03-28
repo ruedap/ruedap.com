@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled } from '@compiled/react';
 import { Product } from './atoms/Product'
+import { PageHeader } from './molecules/PageHeader'
 import json from '../json/data.json'
 import { colors } from '../styles';
 import { lighten } from 'polished'
@@ -8,6 +9,7 @@ import { lighten } from 'polished'
 function App() {
   return (
     <GlobalStyles>
+      <PageHeader />
       <Products>
         { json.products.map(product => {
           return (
