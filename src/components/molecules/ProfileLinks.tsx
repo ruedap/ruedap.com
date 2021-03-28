@@ -14,5 +14,4 @@ export const ProfileLinks = () => {
 const Root = styled.nav`
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
 `

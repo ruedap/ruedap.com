@@ -1,9 +1,13 @@
 import { styled } from '@compiled/react';
 import AvatarPNG from './avatar.png'
 
-export const Avatar = () => {
+interface Props {
+  className?: string
+}
+
+export const Avatar = (props: Props) => {
   return (
-    <Root>
+    <Root className={ props.className }>
       <Image src={ AvatarPNG } />
     </Root>
   )
