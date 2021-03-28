@@ -1,9 +1,10 @@
 import { styled } from '@compiled/react';
+import { Logo } from '../atoms/Logo'
 
 export const PageHeader = () => {
   return (
     <Root>
-      <div>logo</div>
+      <Logo />
       <div>avatar</div>
       <div>profile-links</div>
     </Root>
