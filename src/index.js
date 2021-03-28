@@ -1,6 +1,6 @@
 import { render } from 'react-dom';
 import './extra.css';
-import App from './app';
+import { App } from './components/App';
 
 function createRoot() {
   const element = document.createElement('div');
