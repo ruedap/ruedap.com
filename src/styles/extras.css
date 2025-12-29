@@ -35,6 +35,19 @@
     color: var(--color-hover);
   }
 
+  /* Icon font utility */
+  .dapicon {
+    font-family: dapicons, sans-serif;
+    speak: none;
+    font-feature-settings: 'liga', 'dlig';
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
   /* Restore default styles for content elements */
   h1 {
     font-size: 2em;
