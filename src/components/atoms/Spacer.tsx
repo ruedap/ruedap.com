@@ -1,5 +1,4 @@
 import React from 'react'
-import { styled } from '@compiled/react';
 
 interface Props {
   width?: number
@@ -8,14 +7,14 @@ interface Props {
 
 export const Spacer: React.FC<Props> = (props) => {
   return (
-    <Root { ...props }>
-      { props.children }
-    </Root>
+    <span
+      className="block"
+      style={{
+        width: `${props.width ?? 1}px`,
+        height: `${props.height ?? 1}px`,
+      }}
+    >
+      {props.children}
+    </span>
   )
 }
-
-const Root = styled.span<Props>`
-  display: block;
-  width: ${props => props.width ? props.width : 1}px;
-  height: ${props => props.height ? props.height : 1}px;
-`
