@@ -1,39 +1,15 @@
 import SectionBlogSVG from './section-blog.svg'
 import LogoBlogSVG from './logo-blog.svg'
-import { styled } from '@compiled/react'
 import { Spacer } from '../../atoms/Spacer'
 
 export const Blog = () => {
   return (
-    <Root>
+    <div className="flex flex-col items-center mt-[50px] mb-[200px]">
       <SectionBlogSVG />
       <Spacer height={ 20 } />
-      <LogoBlogLink href="https://blog.ruedap.com">
+      <a href="https://blog.ruedap.com" className="opacity-75 transition-opacity duration-200 hover:opacity-95">
         <LogoBlogSVG />
-      </LogoBlogLink>
-    </Root>
+      </a>
+    </div>
   )
 }
-
-const Root = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 200px;
-`
-
-// TODO mixins.linkEffect
-const linkEffect = `
-  transition: 0.2s linear;
-  transition-property: opacity;
-`
-
-const LogoBlogLink = styled.a`
-  opacity: 0.75;
-  ${linkEffect}
-
-  &:hover {
-    opacity: 0.95;
-  }
-`
