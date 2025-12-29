@@ -1,45 +1,37 @@
 @import "tailwindcss" source("..");
 
-:root {
-  --colors-text: #333;
-  --colors-hover: #666;
+@theme {
+  --color-text: #333;
+  --color-hover: #666;
+  --color-bg: #ececec;
+  --font-serif: "Noto Sans JP", "PT Serif", georgia, "Times New Roman", times, serif;
 }
 
-html {
-  box-sizing: border-box;
-}
+@layer base {
+  @font-face {
+    font-family: dapicons;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/dapicons.woff") format("woff"),
+      url("../assets/fonts/dapicons.ttf") format("truetype");
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+  body {
+    margin: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: var(--font-serif);
+    font-weight: 500;
+  }
 
-@font-face {
-  font-family: dapicons;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/dapicons.woff") format("woff"),
-    url("../assets/fonts/dapicons.ttf") format("truetype");
-}
+  a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-position: under;
+    transition: color 0.2s linear;
+  }
 
-body {
-  margin: 0;
-  color: var(--colors-text);
-  background-color: #ececec;
-  font-family: "Noto Sans JP", "PT Serif", georgia, "Times New Roman", times,
-    serif;
-  font-weight: 500;
-}
-
-a {
-  color: var(--colors-text);
-  text-decoration: underline;
-  text-underline-position: under;
-  transition: 0.2s linear;
-  transition-property: color;
-}
-
-a:hover {
-  color: var(--colors-hover);
+  a:hover {
+    color: var(--color-hover);
+  }
 }
