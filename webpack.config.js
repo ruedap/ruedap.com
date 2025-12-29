@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = process.env.EXTRACT_TO_CSS === 'true';
 
@@ -49,6 +50,11 @@ module.exports = {
     extractCSS && new MiniCssExtractPlugin({ filename: '[name].css' }),
     new HtmlWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/.nojekyll', to: '.nojekyll', toType: 'file' },
+      ],
+    }),
   ].filter(Boolean),
   optimization: {
     minimizer: ['...', new CssMinimizerPlugin()],
