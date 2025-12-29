@@ -37,7 +37,11 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [extractCSS ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+        use: [
+          extractCSS ? MiniCssExtractPlugin.loader : 'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(ico|jpe?g|png|webp|woff|ttf)$/,
