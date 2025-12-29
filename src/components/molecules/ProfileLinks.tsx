@@ -1,10 +1,9 @@
-import { styled } from '@compiled/react';
 import { ProfileLink } from '../atoms/ProfileLink'
 import json from '../../assets/json/data.json'
 
 export const ProfileLinks = () => {
   return (
-    <Root>
+    <nav className="flex flex-col">
       {
         json.profile_links.map(link => {
           return (
@@ -16,11 +15,6 @@ export const ProfileLinks = () => {
           )
         })
       }
-    </Root>
+    </nav>
   )
 }
-
-const Root = styled.nav`
-  display: flex;
-  flex-direction: column;
-`

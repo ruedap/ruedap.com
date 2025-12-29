@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CompiledExtractPlugin } = require('@compiled/webpack-loader');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const extractCSS = process.env.EXTRACT_TO_CSS === 'true';
@@ -26,18 +25,15 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           { loader: 'babel-loader' },
-          {
-            loader: '@compiled/webpack-loader',
-            options: {
-              importReact: false,
-              extract: extractCSS,
-            },
-          },
         ],
       },
       {
         test: /\.css$/i,
-        use: [extractCSS ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+        use: [
+          extractCSS ? MiniCssExtractPlugin.loader : 'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(ico|jpe?g|png|webp|woff|ttf)$/,
@@ -51,7 +47,6 @@ module.exports = {
   },
   plugins: [
     extractCSS && new MiniCssExtractPlugin({ filename: '[name].css' }),
-    extractCSS && new CompiledExtractPlugin(),
     new HtmlWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ].filter(Boolean),

@@ -1,6 +1,3 @@
-import { styled } from '@compiled/react';
-import { fonts, fontWeights } from '../../../styles';
-
 // TODO: fix this
 import './assets/alfred2-font-awesome-workflow.png'
 import './assets/daplog.png'
@@ -27,115 +24,37 @@ const imagePath = (fileName: string) =>
 
 export const Product = (props: Props) => {
   return (
-    <Root className={ props.className }>
-      <Name>{props.name}</Name>
-      <ImageLink href={props.imageLink}>
-        <Image src={imagePath(props.image)} alt={props.name} />
-      </ImageLink>
-      <Body>
-        <Time dateTime={props.pubdate}>{props.time}</Time>
-        <Heading>
-          <HeadingLink href={props.headingLink}>{props.heading}</HeadingLink>
-        </Heading>
-        <Desc dangerouslySetInnerHTML={ {__html: props.description} } />
-        <More>
-          <MoreLink href={props.headingLink}>続きを読む</MoreLink>
-        </More>
-      </Body>
-    </Root>
+    <article className={`max-w-[860px] p-8 text-base bg-[#f2f2f2] shadow-[0_0_2px_2px_rgba(0,0,0,0.05),0_0_0_10px_#f7f7f7_inset] ${props.className || ''}`}>
+      <h1 className="hidden">{props.name}</h1>
+      <a href={props.imageLink} className="block max-w-[1000px] mb-8 lg:-mx-[12%]">
+        <img
+          src={imagePath(props.image)}
+          alt={props.name}
+          className="w-full relative shadow-[0_1px_4px_rgba(0,0,0,0.3),0_0_40px_rgba(0,0,0,0.2)_inset]"
+        />
+      </a>
+      <div className="mb-8 text-center">
+        <time dateTime={props.pubdate} className="block mb-5 font-[georgia] text-xl">
+          {props.time}
+        </time>
+        <h2 className="text-[23px] font-normal">
+          <a
+            href={props.headingLink}
+            className="no-underline transition-colors duration-200 hover:no-underline"
+          >
+            {props.heading}
+          </a>
+        </h2>
+        <div
+          className="leading-[1.8] text-left"
+          dangerouslySetInnerHTML={{__html: props.description}}
+        />
+        <nav className="mb-5 text-center">
+          <a href={props.headingLink} className="transition-colors duration-200">
+            続きを読む
+          </a>
+        </nav>
+      </div>
+    </article>
   )
 }
-
-const Root = styled.article`
-  max-width: 860px;
-  padding: 32px;
-  font-size: 16px;
-  background-color: #f2f2f2;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05), 0 0 0 10px #f7f7f7 inset;
-`
-
-const Name = styled.h1`
-  display: none;
-`
-
-// TODO: mq
-const _mq = `@media (min-width: 1000px)`
-
-const ImageLink = styled.a`
-  display: block;
-  max-width: 1000px;
-  margin-bottom: 32px;
-
-  ${_mq} {
-    margin-right: -12%;
-    margin-left: -12%;
-  }
-`
-
-const imageShadow = `
-  position: relative;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset;
-
-  &::before,
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    bottom: 0;
-    left: 10px;
-    content: '';
-    border-radius: 100px 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-`
-
-const Image = styled.img`
-  width: 100%;
-  ${imageShadow}
-`
-
-const Body = styled.div`
-  margin-bottom: 32px;
-  text-align: center;
-`
-
-const Time = styled.time`
-  display: block;
-  margin-bottom: 20px;
-  font-family: ${fonts.georgia};
-  font-size: 20px;
-`
-
-const Heading = styled.h2`
-  font-size: 23px;
-  font-weight: ${fontWeights.normal};
-`
-
-// TODO mixins.linkEffect
-const linkEffect = `
-  transition: 0.2s linear;
-  transition-property: color;
-`
-
-const HeadingLink = styled.a`
-  ${linkEffect}
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-`
-
-const Desc = styled.div`
-  line-height: 1.8;
-  text-align: left;
-`
-
-const More = styled.nav`
-  margin-bottom: 20px;
-  text-align: center;
-`
-
-const MoreLink = styled.a`
-  ${linkEffect}
-`
