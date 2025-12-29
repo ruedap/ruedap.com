@@ -1,5 +1,4 @@
 import React from 'react';
-import { styled } from '@compiled/react';
 import { Product } from './atoms/Product'
 import { PageHeader } from './molecules/PageHeader'
 import { PageLayout } from './templates/PageLayout'
@@ -9,15 +8,16 @@ import json from '../assets/json/data.json'
 
 export const App = () => {
   return (
-    <PageLayout header={ <PageHeader /> } blog={ <Blog /> }>
-      <Products>
+    <PageLayout header={<PageHeader />} blog={<Blog />}>
+      <div className="flex flex-col items-center">
         <SectionProductsSVG />
-        { json.products.map(product => {
+        {json.products.map(product => {
           return (
-            <ProductStyled
+            <Product
               key={product.id}
-              name={ product.name }
-              imageLink={ product.imageLink}
+              className="mt-[50px] mb-[200px]"
+              name={product.name}
+              imageLink={product.imageLink}
               image={product.image}
               time={product.time}
               pubdate={product.pubdate}
@@ -26,19 +26,8 @@ export const App = () => {
               description={product.description}
             />
           )
-        }) }
-      </Products>
+        })}
+      </div>
     </PageLayout>
   );
 }
-
-const Products = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-const ProductStyled = styled(Product)`
-  margin-top: 50px;
-  margin-bottom: 200px;
-`
